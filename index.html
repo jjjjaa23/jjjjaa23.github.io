@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub Website Template</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             background: #fff;
@@ -22,13 +18,12 @@
             padding: 0;
         }
 
-        /* Logo 区 */
+        /* Logo Section */
         .logo-section {
             padding: 40px 50px;
-            text-align: left;
         }
         .logo-box {
-            width: 200px;
+            width: 220px;
             height: 60px;
             background: #f0f0f0;
             display: flex;
@@ -38,32 +33,17 @@
             font-size: 14px;
             border-radius: 4px;
         }
-         /* Business 区 */
-        .business-section {
+
+        /* Products Section */
+        .products-section {
             padding: 0 50px 40px;
-        }
-        .business-content {
-            background: #fafafa;
-            border-radius: 8px;
-            padding: 30px 40px;
-            line-height: 1.8;
-            font-size: 15px;
-            color: #444;
-        }
-        .business-content p {
-            margin-bottom: 10px;
-        }
-
-
-        /* Download 区 */
-        .download-section {
-            padding: 0 50px 60px;
         }
         .section-title {
             font-size: 24px;
             font-weight: 700;
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             color: #111;
+            text-transform: uppercase;
         }
         .products-grid {
             display: grid;
@@ -104,9 +84,53 @@
             color: #777;
             line-height: 1.5;
         }
+
+        /* Download Section */
+        .download-section {
+            padding: 0 50px 40px;
+        }
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+        }
+        .download-card {
+            background: #fafafa;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .download-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .download-img {
+            width: 100%;
+            height: 160px;
+            background: #e8e8e8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 13px;
+        }
+        .download-card-info {
+            padding: 14px 12px;
+        }
+        .download-card-info h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #222;
+        }
+        .download-card-info p {
+            font-size: 12px;
+            color: #777;
+            line-height: 1.5;
+            margin-bottom: 8px;
+        }
         .download-link {
             display: inline-block;
-            margin-top: 8px;
             padding: 6px 14px;
             background: #2ea44f;
             color: #fff;
@@ -119,11 +143,11 @@
             background: #2c974b;
         }
 
-        /* Business 区 */
+        /* Business Section */
         .business-section {
             padding: 0 50px 40px;
         }
-        .business-content {
+        .business-box {
             background: #fafafa;
             border-radius: 8px;
             padding: 30px 40px;
@@ -131,11 +155,11 @@
             font-size: 15px;
             color: #444;
         }
-        .business-content p {
+        .business-box p {
             margin-bottom: 10px;
         }
 
-        /* Contact 区 */
+        /* Contact Section */
         .contact-section {
             padding: 0 50px 60px;
         }
@@ -190,7 +214,6 @@
             padding: 30px 50px;
             color: #aaa;
             font-size: 12px;
-            border-top: none;
         }
     </style>
 </head>
@@ -199,64 +222,107 @@
 
         <!-- Logo -->
         <div class="logo-section">
-            <div class="logo-box">公司 Logo</div>
+            <div class="logo-box">Company Logo</div>
         </div>
 
-        <!-- Download / Products -->
-        <div class="download-section">
-            <h2 class="section-title">Products / 产品下载</h2>
+        <!-- Products -->
+        <div class="products-section">
+            <h2 class="section-title">Products</h2>
             <div class="products-grid">
-                <!-- Download One -->
                 <div class="product-card">
-                    <div class="product-img">图片占位</div>
+                    <div class="product-img">Image</div>
                     <div class="product-info">
-                        <h3>Download One / 下载一</h3>
-                        <p>Product description for download one.</p>
+                        <h3>Product One</h3>
+                        <p>Product description with text and image layout.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">Image</div>
+                    <div class="product-info">
+                        <h3>Product Two</h3>
+                        <p>Product description with text and image layout.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">Image</div>
+                    <div class="product-info">
+                        <h3>Product Three</h3>
+                        <p>Product description with text and image layout.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">Image</div>
+                    <div class="product-info">
+                        <h3>Product Four</h3>
+                        <p>Product description with text and image layout.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">Image</div>
+                    <div class="product-info">
+                        <h3>Product Five</h3>
+                        <p>Product description with text and image layout.</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">Image</div>
+                    <div class="product-info">
+                        <h3>Product Six</h3>
+                        <p>Product description with text and image layout.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Download -->
+        <div class="download-section">
+            <h2 class="section-title">Download</h2>
+            <div class="download-grid">
+                <div class="download-card">
+                    <div class="download-img">Image</div>
+                    <div class="download-card-info">
+                        <h3>Download One</h3>
+                        <p>Short description for download one.</p>
                         <a class="download-link" href="#" download>Download</a>
                     </div>
                 </div>
-                <!-- Download Two -->
-                <div class="product-card">
-                    <div class="product-img">图片占位</div>
-                    <div class="product-info">
-                        <h3>Download Two / 下载二</h3>
-                        <p>Product description for download two.</p>
+                <div class="download-card">
+                    <div class="download-img">Image</div>
+                    <div class="download-card-info">
+                        <h3>Download Two</h3>
+                        <p>Short description for download two.</p>
                         <a class="download-link" href="#" download>Download</a>
                     </div>
                 </div>
-                <!-- Download Three -->
-                <div class="product-card">
-                    <div class="product-img">图片占位</div>
-                    <div class="product-info">
-                        <h3>Download Three / 下载三</h3>
-                        <p>Product description for download three.</p>
+                <div class="download-card">
+                    <div class="download-img">Image</div>
+                    <div class="download-card-info">
+                        <h3>Download Three</h3>
+                        <p>Short description for download three.</p>
                         <a class="download-link" href="#" download>Download</a>
                     </div>
                 </div>
-                <!-- Download Four -->
-                <div class="product-card">
-                    <div class="product-img">图片占位</div>
-                    <div class="product-info">
-                        <h3>Download Four / 下载四</h3>
-                        <p>Product description for download four.</p>
+                <div class="download-card">
+                    <div class="download-img">Image</div>
+                    <div class="download-card-info">
+                        <h3>Download Four</h3>
+                        <p>Short description for download four.</p>
                         <a class="download-link" href="#" download>Download</a>
                     </div>
                 </div>
-                <!-- Download Five -->
-                <div class="product-card">
-                    <div class="product-img">图片占位</div>
-                    <div class="product-info">
-                        <h3>Download Five / 下载五</h3>
-                        <p>Product description for download five.</p>
+                <div class="download-card">
+                    <div class="download-img">Image</div>
+                    <div class="download-card-info">
+                        <h3>Download Five</h3>
+                        <p>Short description for download five.</p>
                         <a class="download-link" href="#" download>Download</a>
                     </div>
                 </div>
-                <!-- Download Six -->
-                <div class="product-card">
-                    <div class="product-img">图片占位</div>
-                    <div class="product-info">
-                        <h3>Download Six / 下载六</h3>
-                        <p>Product description for download six.</p>
+                <div class="download-card">
+                    <div class="download-img">Image</div>
+                    <div class="download-card-info">
+                        <h3>Download Six</h3>
+                        <p>Short description for download six.</p>
                         <a class="download-link" href="#" download>Download</a>
                     </div>
                 </div>
@@ -265,44 +331,45 @@
 
         <!-- Business -->
         <div class="business-section">
-            <div class="business-content">
-                <h2 style="font-size:18px;font-weight:600;margin-bottom:16px;color:#111;">Business / 业务介绍</h2>
-                <p>这里是业务介绍文字区域。你可以在这里描述公司的主营业务、服务范围、核心优势等内容。This is the business description area where you can write about your company's main business, services, and core strengths.</p>
-                <p>可以继续添加更多段落来说明业务细节。You can add more paragraphs to detail your business operations and advantages.</p>
+            <h2 class="section-title">Business</h2>
+            <div class="business-box">
+                <p>This is the business text area. You can write about your company's main business, services, core strengths, and any other relevant information here. Replace this text with your actual business description.</p>
+                <p>Add more paragraphs as needed to detail your operations, mission, vision, and values. The layout is clean and without separators between sections.</p>
             </div>
         </div>
 
         <!-- Contact -->
         <div class="contact-section">
-            <h2 class="section-title">Contact / 联系我们</h2>
+            <h2 class="section-title">Contact</h2>
             <div class="contact-grid">
                 <!-- Email -->
                 <div class="contact-card">
-                    <h3>Email / 电子邮件</h3>
+                    <h3>Email</h3>
                     <div class="contact-item">
-                        <div class="label">Address / 地址</div>
+                        <div class="label">Address</div>
                         <div class="value"><a href="mailto:your-email@example.com">your-email@example.com</a></div>
                     </div>
                 </div>
                 <!-- WhatsApp Business -->
                 <div class="contact-card">
-                    <h3>WhatsApp Business / WhatsApp商务</h3>
+                    <h3>WhatsApp Business</h3>
                     <div class="contact-item">
-                        <div class="label">Number / 号码</div>
+                        <div class="label">Number</div>
                         <div class="value">
-                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.472144C17.078477 17.290477 16.683144 17.136976 16.287144 17.010476C16.098477 16.954476 15.90784 16.928143 15.716027 16.928143C15.3284 16.928143 14.9408 17.036143 14.6444 17.278476L14.3744 17.514476C14.1444 17.690476 13.8572 17.690476 13.6272 17.514476C13.3344 17.278476 13.134144 16.942476 13.134144 16.586476C13.134144 16.522476 13.134144 16.454476 13.1472 16.390476C13.2272 15.986476 13.134144 15.576476 12.8972 15.286476C12.6612 14.996476 12.2972 14.830476 11.9072 14.830476C11.8412144...z"/>
+                            <svg class="whatsapp-icon" viewBox="0 024241em" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472144C17.078477 17.290477 16.683144 17.136976 16.287144 17.010476C16.098477 16.954476 15.90784 16.928143 15.716027 16.928143C15.3284 16.928143 14.9408 17.036143 14.6444 17.278476L14.3744 17.514476C14.1444 17.690476 13.8572 17.690476 13.6272 17.514476C13.3344
+...（SVG path truncated for brevity）...
                             </svg>
-                            <a href="https://wa.me/你的号码" target="_blank">+86 XXX XXXX XXXX</a>
+                            <a href="https://wa.me/YOUR_NUMBER" target="_blank">+86 XXX XXX XXXX</a>
                         </div>
                     </div>
                 </div>
                 <!-- Location -->
                 <div class="contact-card">
-                    <h3>Location / 地理位置</h3>
+                    <h3>Location</h3>
                     <div class="contact-item">
-                        <div class="label">Address / 地址</div>
-                        <div class="value">江苏省苏州市相城区沈思港路87号<br>Jiangsu Province, Suzhou City, Xiangcheng District</div>
+                        <div class="label">Address</div>
+                        <div class="value">No.87 Shensigang Road, Xiangcheng District<br>Suzhou City, Jiangsu Province, China</div>
                     </div>
                 </div>
             </div>
@@ -311,7 +378,7 @@
     </div>
 
     <footer>
-        © 2026 · Powered by GitHub Pages · No separators between sections
+        © 2026 · Powered by GitHub Pages · No Separators Between Sections
     </footer>
 </body>
 </html>
