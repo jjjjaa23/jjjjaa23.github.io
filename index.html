@@ -3,195 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的 GitHub 网站</title>
+    <title>GitHub Website Template</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f9f9f9;
-            min-height: 100vh;
+            background: #fff;
+            color: #222;
+            min-width: 1400px;
         }
         .container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 2rem 1rem;
+            padding: 0;
         }
-        .hero {
-            text-align: center;
-            padding: 3rem 1rem;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            margin-bottom: 1.5rem;
+
+        /* Logo 区 */
+        .logo-section {
+            padding: 40px 50px;
+            text-align: left;
         }
-        .hero img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 1.5rem;
-            border: 4px solid #e8e8e8;
+        .logo-box {
+            width: 200px;
+            height: 60px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 14px;
+            border-radius: 4px;
         }
-        .hero h1 {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
+
+        /* Download 区 */
+        .download-section {
+            padding: 0 50px 60px;
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #111;
+        }
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+        }
+        .product-card {
+            background: #fafafa;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .product-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .product-img {
+            width: 100%;
+            height: 160px;
+            background: #e8e8e8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 13px;
+        }
+        .product-info {
+            padding: 14px 12px;
+        }
+        .product-info h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 6px;
             color: #222;
         }
-        .hero p {
-            color: #666;
-            font-size: 1.1rem;
+        .product-info p {
+            font-size: 12px;
+            color: #777;
+            line-height: 1.5;
         }
-        .section {
-            background: #fff;
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-        .section h2 {
-            font-size: 1.3rem;
-            margin-bottom: 1rem;
-            color: #444;
-        }
-        .section p {
-            color: #555;
-            margin-bottom: 1rem;
-        }
-        .about-content {
-            display: flex;
-            align-items: flex-start;
-            gap: 1.5rem;
-        }
-        .about-content img {
-            width: 150px;
-            height: 150px;
-            border-radius: 8px;
-            object-fit: cover;
-            flex-shrink: 0;
-        }
-        .about-content .text {
-            flex: 1;
-        }
-        .download-btn {
+        .download-link {
             display: inline-block;
-            padding: 0.7rem 1.5rem;
+            margin-top: 8px;
+            padding: 6px 14px;
             background: #2ea44f;
             color: #fff;
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
+            font-size: 12px;
+            border-radius: 4px;
             transition: background 0.2s;
         }
-        .download-btn:hover {
+        .download-link:hover {
             background: #2c974b;
         }
-        .extra-info {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-top: 1.5rem;
-            padding-top: 1.5rem;
-            border-top: none;
+
+        /* Business 区 */
+        .business-section {
+            padding: 0 50px 40px;
         }
-        .extra-info img {
-            width: 120px;
-            height: 120px;
+        .business-content {
+            background: #fafafa;
             border-radius: 8px;
-            object-fit: cover;
+            padding: 30px 40px;
+            line-height: 1.8;
+            font-size: 15px;
+            color: #444;
         }
-        .extra-info .text {
-            flex: 1;
+        .business-content p {
+            margin-bottom: 10px;
         }
-        .contact-list {
-            list-style: none;
+
+        /* Contact 区 */
+        .contact-section {
+            padding: 0 50px 60px;
         }
-        .contact-list li {
-            padding: 0.5rem 0;
-            color: #555;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
         }
-        .contact-list li a {
+        .contact-card {
+            background: #fafafa;
+            border-radius: 8px;
+            padding: 28px 30px;
+            text-align: left;
+        }
+        .contact-card h3 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #888;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 16px;
+        }
+        .contact-item {
+            margin-bottom: 14px;
+        }
+        .contact-item .label {
+            font-size: 12px;
+            color: #aaa;
+            margin-bottom: 4px;
+        }
+        .contact-item .value {
+            font-size: 14px;
+            color: #222;
+        }
+        .contact-item a {
             color: #0366d6;
             text-decoration: none;
         }
-        .contact-list li a:hover {
+        .contact-item a:hover {
             text-decoration: underline;
         }
         .whatsapp-icon {
-            width: 24px;
-            height: 24px;
             display: inline-block;
+            width: 22px;
+            height: 22px;
             vertical-align: middle;
+            margin-right: 4px;
         }
+
         footer {
             text-align: center;
-            padding: 2rem 1rem;
-            color: #999;
-            font-size: 0.9rem;
+            padding: 30px 50px;
+            color: #aaa;
+            font-size: 12px;
+            border-top: none;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        
-        <!-- 头部：图片 + 标题 + 简介 -->
-        <div class="hero">
-            <img src="https://via.placeholder.com/180" alt="头像">
-            <h1>我的 GitHub 网站</h1>
-            <p>这里是一段简短的个人介绍，你可以替换成自己的文字。</p>
+
+        <!-- Logo -->
+        <div class="logo-section">
+            <div class="logo-box">公司 Logo</div>
         </div>
 
-        <!-- 关于我：文字 + 图片 -->
-        <div class="section">
-            <h2>关于我</h2>
-            <div class="about-content">
-                <img src="https://via.placeholder.com/150" alt="关于我图片">
-                <div class="text">
-                    <p>这里是关于我的文字内容。你可以在这里写下你的个人简介、工作经历、技术栈或者任何你想展示的信息。这段文字会配合图片一起展示，让访问者更直观地了解你。</p>
-                    <p>如果你需要分段，直接在这里继续写就好了。GitHub Pages 部署后，这个页面就能被公开访问。</p>
+        <!-- Download / Products -->
+        <div class="download-section">
+            <h2 class="section-title">Products / 产品下载</h2>
+            <div class="products-grid">
+                <!-- Download One -->
+                <div class="product-card">
+                    <div class="product-img">图片占位</div>
+                    <div class="product-info">
+                        <h3>Download One / 下载一</h3>
+                        <p>Product description for download one.</p>
+                        <a class="download-link" href="#" download>Download</a>
+                    </div>
+                </div>
+                <!-- Download Two -->
+                <div class="product-card">
+                    <div class="product-img">图片占位</div>
+                    <div class="product-info">
+                        <h3>Download Two / 下载二</h3>
+                        <p>Product description for download two.</p>
+                        <a class="download-link" href="#" download>Download</a>
+                    </div>
+                </div>
+                <!-- Download Three -->
+                <div class="product-card">
+                    <div class="product-img">图片占位</div>
+                    <div class="product-info">
+                        <h3>Download Three / 下载三</h3>
+                        <p>Product description for download three.</p>
+                        <a class="download-link" href="#" download>Download</a>
+                    </div>
+                </div>
+                <!-- Download Four -->
+                <div class="product-card">
+                    <div class="product-img">图片占位</div>
+                    <div class="product-info">
+                        <h3>Download Four / 下载四</h3>
+                        <p>Product description for download four.</p>
+                        <a class="download-link" href="#" download>Download</a>
+                    </div>
+                </div>
+                <!-- Download Five -->
+                <div class="product-card">
+                    <div class="product-img">图片占位</div>
+                    <div class="product-info">
+                        <h3>Download Five / 下载五</h3>
+                        <p>Product description for download five.</p>
+                        <a class="download-link" href="#" download>Download</a>
+                    </div>
+                </div>
+                <!-- Download Six -->
+                <div class="product-card">
+                    <div class="product-img">图片占位</div>
+                    <div class="product-info">
+                        <h3>Download Six / 下载六</h3>
+                        <p>Product description for download six.</p>
+                        <a class="download-link" href="#" download>Download</a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- 下载资源 -->
-        <div class="section">
-            <h2>下载资源</h2>
-            <p>点击下方按钮下载相关文件：</p>
-            <a class="download-btn" href="https://github.com/你的用户名/你的仓库名/releases/download/v1.0/example.zip" download>
-                下载示例文件
-            </a>
-            
-            <!-- 下载资源下面的图文区域 -->
-            <div class="extra-info">
-                <img src="https://via.placeholder.com/120" alt="资源说明图">
-                <div class="text">
-                    <p>这里是下载资源下方的补充说明文字。你可以用来介绍文件内容、使用说明、版本更新日志等。图片配合文字，让信息传达更清晰。</p>
-                </div>
+        <!-- Business -->
+        <div class="business-section">
+            <div class="business-content">
+                <h2 style="font-size:18px;font-weight:600;margin-bottom:16px;color:#111;">Business / 业务介绍</h2>
+                <p>这里是业务介绍文字区域。你可以在这里描述公司的主营业务、服务范围、核心优势等内容。This is the business description area where you can write about your company's main business, services, and core strengths.</p>
+                <p>可以继续添加更多段落来说明业务细节。You can add more paragraphs to detail your business operations and advantages.</p>
             </div>
         </div>
 
-        <!-- 联系方式 -->
-        <div class="section">
-            <h2>联系方式</h2>
-            <ul class="contact-list">
-                <li>📧 邮箱：<a href="mailto:your-email@example.com">your-email@example.com</a></li>
-                <li>💼 GitHub：<a href="https://github.com/你的用户名" target="_blank">@你的用户名</a></li>
-                <li>
-                    <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M17.472144C17.078477 17.290477 16.683144 17.136976 16.287144 17.010476C16.098477 16.954476 15.90784 16.928143 15.716027 16.928143C15.3284 16.928143 14.9408 17.036143 14.6444 17.278476L14.3744 17.514476C14.1444 17.690476 13.8572 17.690476 13.6272 17.514476C13.3344 17.278476 13.134144 16.942476 13.134144 16.586476C13.134144 16.522476 13.134144 16.454476 13.1472 16.390476C13.2272 15.986476 13.134144 15.576476 12.8972 15.286476C12.6612 14.996476 12.2972 14.830476 11.9072 14.830476C11.8412 14.830476 11.7752144C11.836976 11.764976 11.7752144 11.698976 11.7112144 11.698976H11.6572144C11.5912144 11.698976 11.5252144 11.716976 11.4612144 11.752976C11.4612144 11.752976 10.9952144 11.996976 10.9272144 12.036976C10.7032144 12.150976 10.4372144 12.150976 10.2132144 12.036976C9.98921441 11.922976 9.83921441 11.678976 9.83921441 11.398976C9.83921441 11.334976 9.85321441 11.270976 9.87321441 11.206976C9.95321441 10.870976 10.072144 10.542976 10.2292144 10.222976C10.3872144 9.902976100C10\n...（SVG路径已简化，实际使用时可替换为完整WhatsApp图标）...
-                    </svg>
-                    WhatsApp Business：<a href="https://wa.me/你的号码" target="_blank">你的WhatsApp Business</a>
-                </li>
-            </ul>
+        <!-- Contact -->
+        <div class="contact-section">
+            <h2 class="section-title">Contact / 联系我们</h2>
+            <div class="contact-grid">
+                <!-- Email -->
+                <div class="contact-card">
+                    <h3>Email / 电子邮件</h3>
+                    <div class="contact-item">
+                        <div class="label">Address / 地址</div>
+                        <div class="value"><a href="mailto:your-email@example.com">your-email@example.com</a></div>
+                    </div>
+                </div>
+                <!-- WhatsApp Business -->
+                <div class="contact-card">
+                    <h3>WhatsApp Business / WhatsApp商务</h3>
+                    <div class="contact-item">
+                        <div class="label">Number / 号码</div>
+                        <div class="value">
+                            <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.472144C17.078477 17.290477 16.683144 17.136976 16.287144 17.010476C16.098477 16.954476 15.90784 16.928143 15.716027 16.928143C15.3284 16.928143 14.9408 17.036143 14.6444 17.278476L14.3744 17.514476C14.1444 17.690476 13.8572 17.690476 13.6272 17.514476C13.3344 17.278476 13.134144 16.942476 13.134144 16.586476C13.134144 16.522476 13.134144 16.454476 13.1472 16.390476C13.2272 15.986476 13.134144 15.576476 12.8972 15.286476C12.6612 14.996476 12.2972 14.830476 11.9072 14.830476C11.8412144...z"/>
+                            </svg>
+                            <a href="https://wa.me/你的号码" target="_blank">+86 XXX XXXX XXXX</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Location -->
+                <div class="contact-card">
+                    <h3>Location / 地理位置</h3>
+                    <div class="contact-item">
+                        <div class="label">Address / 地址</div>
+                        <div class="value">江苏省苏州市相城区沈思港路87号<br>Jiangsu Province, Suzhou City, Xiangcheng District</div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
+
     <footer>
-        © 2026 · Powered by XIORVE
+        © 2026 · Powered by GitHub Pages · No separators between sections
     </footer>
 </body>
 </html>
