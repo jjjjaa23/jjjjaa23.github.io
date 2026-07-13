@@ -14,7 +14,7 @@
             min-height: 100vh;
         }
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 2rem 1rem;
         }
@@ -24,7 +24,7 @@
             background: #fff;
             border-radius: 12px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
         }
         .hero img {
             width: 180px;
@@ -43,23 +43,36 @@
             color: #666;
             font-size: 1.1rem;
         }
-        .card {
+        .section {
             background: #fff;
             border-radius: 12px;
             padding: 2rem;
             margin-bottom: 1.5rem;
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
-        .card h2 {
+        .section h2 {
             font-size: 1.3rem;
             margin-bottom: 1rem;
             color: #444;
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 0.5rem;
         }
-        .card p {
+        .section p {
             color: #555;
             margin-bottom: 1rem;
+        }
+        .about-content {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+        .about-content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .about-content .text {
+            flex: 1;
         }
         .download-btn {
             display: inline-block;
@@ -74,12 +87,32 @@
         .download-btn:hover {
             background: #2c974b;
         }
+        .extra-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: none;
+        }
+        .extra-info img {
+            width: 120px;
+            height: 120px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .extra-info .text {
+            flex: 1;
+        }
         .contact-list {
             list-style: none;
         }
         .contact-list li {
             padding: 0.5rem 0;
             color: #555;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
         .contact-list li a {
             color: #0366d6;
@@ -87,6 +120,12 @@
         }
         .contact-list li a:hover {
             text-decoration: underline;
+        }
+        .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            vertical-align: middle;
         }
         footer {
             text-align: center;
@@ -106,33 +145,47 @@
             <p>这里是一段简短的个人介绍，你可以替换成自己的文字。</p>
         </div>
 
-        <!-- 文字内容区 -->
-        <div class="card">
+        <!-- 关于我：文字 + 图片 -->
+        <div class="section">
             <h2>关于我</h2>
-            <p>
-                这里是文字内容区域。你可以在这里写下你的项目介绍、个人简介、技术栈说明或者任何你想展示的文字信息。这段文字会展示在网站的主要区域，清晰明了地传达你的内容。
-            </p>
-            <p>
-                如果你需要分段，直接在这里继续写就好了。GitHub Pages 部署后，这个页面就能被公开访问。
-            </p>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/150" alt="关于我图片">
+                <div class="text">
+                    <p>这里是关于我的文字内容。你可以在这里写下你的个人简介、工作经历、技术栈或者任何你想展示的信息。这段文字会配合图片一起展示，让访问者更直观地了解你。</p>
+                    <p>如果你需要分段，直接在这里继续写就好了。GitHub Pages 部署后，这个页面就能被公开访问。</p>
+                </div>
+            </div>
         </div>
 
-        <!-- 下载链接区 -->
-        <div class="card">
+        <!-- 下载资源 -->
+        <div class="section">
             <h2>下载资源</h2>
             <p>点击下方按钮下载相关文件：</p>
             <a class="download-btn" href="https://github.com/你的用户名/你的仓库名/releases/download/v1.0/example.zip" download>
                 下载示例文件
             </a>
+            
+            <!-- 下载资源下面的图文区域 -->
+            <div class="extra-info">
+                <img src="https://via.placeholder.com/120" alt="资源说明图">
+                <div class="text">
+                    <p>这里是下载资源下方的补充说明文字。你可以用来介绍文件内容、使用说明、版本更新日志等。图片配合文字，让信息传达更清晰。</p>
+                </div>
+            </div>
         </div>
 
-        <!-- 联系方式区 -->
-        <div class="card">
+        <!-- 联系方式 -->
+        <div class="section">
             <h2>联系方式</h2>
             <ul class="contact-list">
                 <li>📧 邮箱：<a href="mailto:your-email@example.com">your-email@example.com</a></li>
                 <li>💼 GitHub：<a href="https://github.com/你的用户名" target="_blank">@你的用户名</a></li>
-                <li>💬 微信：your-wechat-id（请备注来意）</li>
+                <li>
+                    <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="#25D366" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472144C17.078477 17.290477 16.683144 17.136976 16.287144 17.010476C16.098477 16.954476 15.90784 16.928143 15.716027 16.928143C15.3284 16.928143 14.9408 17.036143 14.6444 17.278476L14.3744 17.514476C14.1444 17.690476 13.8572 17.690476 13.6272 17.514476C13.3344 17.278476 13.134144 16.942476 13.134144 16.586476C13.134144 16.522476 13.134144 16.454476 13.1472 16.390476C13.2272 15.986476 13.134144 15.576476 12.8972 15.286476C12.6612 14.996476 12.2972 14.830476 11.9072 14.830476C11.8412 14.830476 11.7752144C11.836976 11.764976 11.7752144 11.698976 11.7112144 11.698976H11.6572144C11.5912144 11.698976 11.5252144 11.716976 11.4612144 11.752976C11.4612144 11.752976 10.9952144 11.996976 10.9272144 12.036976C10.7032144 12.150976 10.4372144 12.150976 10.2132144 12.036976C9.98921441 11.922976 9.83921441 11.678976 9.83921441 11.398976C9.83921441 11.334976 9.85321441 11.270976 9.87321441 11.206976C9.95321441 10.870976 10.072144 10.542976 10.2292144 10.222976C10.3872144 9.902976100C10\n...（SVG路径已简化，实际使用时可替换为完整WhatsApp图标）...
+                    </svg>
+                    WhatsApp Business：<a href="https://wa.me/你的号码" target="_blank">你的WhatsApp Business</a>
+                </li>
             </ul>
         </div>
 
