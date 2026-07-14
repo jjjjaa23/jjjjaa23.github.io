@@ -1,258 +1,1185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Official Corporate Website | Homepage</title>
-    <style>
-        /* Global Reset and Styles */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffffff;
-            color: #333333;
-            line-height: 1.6;
-        }
 
-        /* Main Wrapper: Fixed Max Width of 1200px and Centered */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
 
-        /* Header / Logo Section */
-        header {
-            padding: 30px 0;
-        }
-        .logo img {
-            max-height: 50px;
-            object-fit: contain;
-        }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        /* Section Layout: Seamless transitions using natural padding instead of border lines */
-        section {
-            padding: 60px 0;
-        }
+<title>XIORVE | Precision Motion Solutions for Robotics</title>
 
-        /* Typography */
-        h2 {
-            font-size: 28px;
-            margin-top: 0;
-            margin-bottom: 20px;
-            text-align: center;
-            font-weight: 600;
-        }
+<meta name="description"
+content="Professional Harmonic Reducers and Harmonic Joint Modules for Robotics, Intelligent Automation and Motion Control.">
 
-        /* Paragraph Content Layout */
-        .text-content {
-            font-size: 16px;
-            color: #555555;
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto;
-        }
+<meta name="keywords"
+content="Harmonic Reducer,Harmonic Joint Module,Robot Joint,Robotics,Harmonic Drive,Motion Control">
 
-        /* Two-Column Showcase Grid (Text + Images Section) */
-        .gallery-grid {
-            display: flex;
-            gap: 30px;
-            margin-top: 30px;
-        }
-        .gallery-item {
-            flex: 1;
-        }
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 6px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-        }
+<meta name="author" content="XIORVE">
 
-        /* Download Section: Button Row Layout */
-        .download-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 30px;
-        }
-        .download-btn {
-            display: inline-block;
-            padding: 12px 28px;
-            background-color: #24292e; /* GitHub style dark theme buttons */
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 15px;
-            border-radius: 6px;
-            transition: background-color 0.2s ease;
-        }
-        .download-btn:hover {
-            background-color: #0366d6;
-        }
+<meta property="og:title"
+content="XIORVE | Precision Motion Solutions for Robotics">
 
-        /* Footer / Contact Layout */
-        footer {
-            padding: 60px 0 80px 0;
-        }
-        .contact-grid {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            text-align: center;
-            margin-top: 30px;
-        }
-        .contact-column {
-            flex: 1;
-            padding: 0 10px;
-        }
-        .contact-column h3 {
-            font-size: 18px;
-            margin-bottom: 15px;
-            color: #24292e;
-        }
-        .contact-column p, .contact-column a {
-            font-size: 15px;
-            color: #586069;
-            text-decoration: none;
-        }
-        .contact-column a:hover {
-            text-decoration: underline;
-            color: #0366d6;
-        }
+<meta property="og:description"
+content="Professional Harmonic Reducers & Harmonic Joint Modules">
 
-        /* WhatsApp Section Split (Text + QR Side-by-Side Arrangement) */
-        .whatsapp-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            text-align: left;
-            max-width: 280px;
-            margin: 0 auto;
-        }
-        .whatsapp-qr img {
-            width: 80px;
-            height: 80px;
-            display: block;
-            border: 1px solid #e1e4e8;
-            border-radius: 4px;
-            padding: 4px;
-            background: #fff;
-        }
+<meta property="og:type"
+content="website">
 
-        /* Lightweight Responsive Adjustments for Mobile Devices */
-        @media (max-width: 768px) {
-            .gallery-grid, .contact-grid {
-                flex-direction: column;
-                gap: 30px;
-            }
-            .download-links {
-                flex-direction: column;
-                align-items: center;
-            }
-            .download-btn {
-                width: 80%;
-                text-align: center;
-            }
-            .whatsapp-wrapper {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
+<meta property="og:image"
+content="images/hero.jpg">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="style.css">
+
+<link rel="icon"
+href="images/favicon.png">
+
 </head>
+
 <body>
 
-    <div class="container">
-        
-        <header>
-            <div class="logo">
-                < img src="http://googleusercontent.com/image_collection/image_retrieval/6829004112641148644_0" alt="Company Logo">
-            </div>
-        </header>
+<header class="header">
 
-        <section id="about">
-            <h2>About</h2>
-            <div class="text-content">
-                This is the placeholder text for your About section. Use this space to deliver a compelling introduction regarding your company's core mission, global vision, or technical background. The layout offers seamless transitions between sections using balanced spacing, ensuring a polished and minimalist user experience.
-            </div>
-        </section>
+<div class="container">
 
-        <section id="products">
-            <h2>Products</h2>
-            <div class="text-content">
-                This is the placeholder text for your Products section. Highlight your main software versions, primary physical product lines, or specialty engineering services here. Keep the description concise and focused on how you solve problems for your clients.
-            </div>
-        </section>
+<div class="navbar">
 
-        <section id="showcase">
-            <h2>Product Showcase</h2>
-            <div class="text-content">
-                This section beautifully combines descriptive overview text with high-resolution visual previews. Use the twin columns below to present interface mockups, live product applications, or core feature cards.
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    < img src="http://googleusercontent.com/image_collection/image_retrieval/85686354356839291_0" alt="Product Showcase Image 1">
-                </div>
-                <div class="gallery-item">
-                    < img src="http://googleusercontent.com/image_collection/image_retrieval/85686354356839291_1" alt="Product Showcase Image 2">
-                </div>
-            </div>
-        </section>
+<a class="logo"
+href="#">
 
-        <section id="download">
-            <h2>Download</h2>
-            <div class="download-links">
-                <a href=" " class="download-btn">Download 1</a >
-                <a href="#" class="download-btn">Download 2</a >
-                <a href="#" class="download-btn">Download 3</a >
-                <a href="#" class="download-btn">Download 4</a >
-                <a href="#" class="download-btn">Download 5</a >
-                <a href="#" class="download-btn">Download 6</a >
-            </div>
-        </section>
+XIORVE
 
-        <section id="business">
-            <h2>Business</h2>
-            <div class="text-content">
-                This is the placeholder text for your Business partnership section. Provide precise details regarding global distribution networks, enterprise supply contracts, customization workflows, or trade compliance details to attract professional corporate clients.
-            </div>
-        </section>
+</a>
 
-        <footer id="contact">
-            <h2>Contact</h2>
-            <div class="contact-grid">
-                
-                <div class="contact-column">
-                    <h3>Email</h3>
-                    <p><a href="mailto:service@yourcompany.com">service@yourcompany.com</a ></p >
-                </div>
-                
-                <div class="contact-column">
-                    <h3>WhatsApp Business</h3>
-                    <div class="whatsapp-wrapper">
-                        <div class="whatsapp-text">
-                            <p>Contact Us:<br><strong>+86 123 4567 8910</strong></p >
-                        </div>
-                        <div class="whatsapp-qr">
-                            < img src="[attachment_0](attachment)" alt="WhatsApp QR Code">
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-column">
-                    <h3>Location</h3>
-                    <p>Building 1, High-Tech Industrial Park,<br>Chaoyang District, Beijing, China</p >
-                </div>
+<nav>
 
-            </div>
-        </footer>
+<ul>
 
-    </div>
+<li>
+
+<a href="#applications">
+
+Applications
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#products">
+
+Products
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#resources">
+
+Resources
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#about">
+
+About
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#contact">
+
+Contact
+
+</a>
+
+</li>
+
+</ul>
+
+</nav>
+
+<a class="quote-button"
+href="#contact">
+
+Get Quote
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<main>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="hero-content">
+
+<span class="hero-label">
+
+PRECISION MOTION SOLUTIONS
+
+</span>
+
+<h1>
+
+Precision Motion
+
+<br>
+
+Powering the Future
+
+<br>
+
+of Robotics
+
+</h1>
+
+<p>
+
+Professional Harmonic Reducers and
+Harmonic Joint Modules engineered
+for intelligent robotics,
+industrial automation
+and precision motion control.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#products"
+class="primary-btn">
+
+Explore Products
+
+</a>
+
+<a href="#contact"
+class="secondary-btn">
+
+Get Quote
+
+</a>
+
+</div>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/hero.jpg"
+alt="Robot">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+
+ABOUT XIORVE
+
+</span>
+
+<h2>
+
+Built for
+
+Robot Engineers
+
+</h2>
+
+</div>
+
+<div class="about-grid">
+
+<div class="about-image">
+
+<img src="images/about.jpg"
+alt="About">
+
+</div>
+
+<div class="about-text">
+
+<p>
+
+XIORVE focuses exclusively on
+precision motion solutions for
+the global robotics industry.
+
+</p>
+
+<p>
+
+Our products include Harmonic
+Reducers and Harmonic Joint
+Modules designed for
+industrial robots,
+collaborative robots,
+humanoid robotics,
+medical robotics,
+research platforms
+and intelligent automation.
+
+</p>
+
+<p>
+
+We believe precision,
+reliability and long-term
+engineering partnership create
+real value for customers.
+
+</p>
+
+<div class="about-data">
+
+<div>
+
+<h3>
+
+2
+
+</h3>
+
+<p>
+
+Strategic Manufacturing
+Partners
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+6+
+
+</h3>
+
+<p>
+
+Robotics Applications
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Europe
+
+</h3>
+
+<p>
+
+Primary Market
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section><section id="applications">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+
+APPLICATIONS
+
+</span>
+
+<h2>
+
+Designed for
+Modern Robotics
+
+</h2>
+
+<p>
+
+Precision motion components
+serving the world's most
+demanding robotic applications.
+
+</p>
+
+</div>
+
+<div class="application-list">
+
+<div class="application-card">
+
+<div class="application-image">
+
+<img src="images/application-humanoid.jpg"
+alt="Humanoid Robotics">
+
+</div>
+
+<div class="application-content">
+
+<h3>
+
+Humanoid Robotics
+
+</h3>
+
+<p>
+
+High precision harmonic
+motion systems for humanoid
+robot joints, dexterous arms
+and intelligent mobility.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="application-card reverse">
+
+<div class="application-image">
+
+<img src="images/application-cobot.jpg"
+alt="Collaborative Robotics">
+
+</div>
+
+<div class="application-content">
+
+<h3>
+
+Collaborative Robotics
+
+</h3>
+
+<p>
+
+Compact harmonic drive
+solutions enabling safe,
+accurate and efficient
+collaborative robots.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="application-card">
+
+<div class="application-image">
+
+<img src="images/application-industrial.jpg"
+alt="Industrial Robotics">
+
+</div>
+
+<div class="application-content">
+
+<h3>
+
+Industrial Automation
+
+</h3>
+
+<p>
+
+Reliable precision transmission
+for welding, assembly,
+handling and intelligent
+manufacturing systems.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="application-card reverse">
+
+<div class="application-image">
+
+<img src="images/application-medical.jpg"
+alt="Medical Robotics">
+
+</div>
+
+<div class="application-content">
+
+<h3>
+
+Medical Robotics
+
+</h3>
+
+<p>
+
+Smooth, compact and reliable
+motion solutions for surgical,
+rehabilitation and medical
+robotic equipment.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="precision-banner">
+
+<div class="container">
+
+<div class="precision-content">
+
+<span>
+
+WHY PRECISION MATTERS
+
+</span>
+
+<h2>
+
+Every Degree.
+
+<br>
+
+Every Micron.
+
+<br>
+
+Every Movement.
+
+</h2>
+
+<p>
+
+Precision defines the future
+of intelligent robotics.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="products">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+
+PRODUCTS
+
+</span>
+
+<h2>
+
+Engineered for
+Robotics Motion Control
+
+</h2>
+
+<p>
+
+Professional harmonic drive
+products developed for
+modern robotic systems and
+intelligent automation.
+
+</p>
+
+</div>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<div class="product-photo">
+
+<img src="images/reducer.jpg"
+alt="Harmonic Reducer">
+
+</div>
+
+<div class="product-info">
+
+<h3>
+
+Harmonic Reducers
+
+</h3>
+
+<p>
+
+High precision transmission
+components with low backlash,
+high torque density and
+excellent positioning accuracy.
+
+</p>
+
+<ul>
+
+<li>Ultra Low Backlash</li>
+
+<li>Compact Design</li>
+
+<li>High Torque Capacity</li>
+
+<li>Long Service Life</li>
+
+</ul>
+
+<div class="product-buttons">
+
+<a href="#contact"
+class="primary-btn">
+
+Learn More
+
+</a>
+
+<a href="downloads/HarmonicReducer.pdf"
+class="text-link">
+
+Download PDF →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<div class="product-photo">
+
+<img src="images/module.jpg"
+alt="Harmonic Joint Module">
+
+</div>
+
+<div class="product-info">
+
+<h3>
+
+Harmonic Joint Modules
+
+</h3>
+
+<p>
+
+Integrated robotic joint
+solutions combining harmonic
+drive, motor and precision
+control into one compact unit.
+
+</p>
+
+<ul>
+
+<li>Integrated Design</li>
+
+<li>Lightweight</li>
+
+<li>Easy Installation</li>
+
+<li>Ready for Robotics</li>
+
+</ul>
+
+<div class="product-buttons">
+
+<a href="#contact"
+class="primary-btn">
+
+Learn More
+
+</a>
+
+<a href="downloads/HarmonicJointModule.pdf"
+class="text-link">
+
+Download PDF →
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section><section id="why">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+
+WHY XIORVE
+
+</span>
+
+<h2>
+
+More Than Products
+
+</h2>
+
+<p>
+
+Your long-term engineering
+partner for precision motion
+solutions.
+
+</p>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<div class="why-icon">
+
+01
+
+</div>
+
+<h3>
+
+Engineering Focus
+
+</h3>
+
+<p>
+
+Focused exclusively on
+robotics motion control
+instead of general industrial
+transmission.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="why-icon">
+
+02
+
+</div>
+
+<h3>
+
+Stable Manufacturing
+
+</h3>
+
+<p>
+
+Supported by experienced
+strategic manufacturing
+partners with reliable
+production capacity.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="why-icon">
+
+03
+
+</div>
+
+<h3>
+
+Fast Technical Response
+
+</h3>
+
+<p>
+
+Professional product
+selection, application
+support and engineering
+communication.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="why-icon">
+
+04
+
+</div>
+
+<h3>
+
+European Market Oriented
+
+</h3>
+
+<p>
+
+Website, documentation,
+payment methods and
+communication all designed
+for international customers.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="resources">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>
+
+RESOURCES
+
+</span>
+
+<h2>
+
+Downloads
+
+</h2>
+
+<p>
+
+Everything you need before
+starting your project.
+
+</p>
+
+</div>
+
+<div class="resource-grid">
+
+<a href="downloads/Product-Catalog.pdf"
+class="resource-card">
+
+<h3>
+
+Product Catalog
+
+</h3>
+
+<p>
+
+Complete product overview
+and specifications.
+
+</p>
+
+<span>
+
+Download →
+
+</span>
+
+</a>
+
+<a href="downloads/Company-Profile.pdf"
+class="resource-card">
+
+<h3>
+
+Company Profile
+
+</h3>
+
+<p>
+
+Learn more about
+XIORVE.
+
+</p>
+
+<span>
+
+Download →
+
+</span>
+
+</a>
+
+<a href="downloads/OEM-Service.pdf"
+class="resource-card">
+
+<h3>
+
+OEM / ODM Guide
+
+</h3>
+
+<p>
+
+Customized cooperation
+process.
+
+</p>
+
+<span>
+
+Download →
+
+</span>
+
+</a>
+
+<a href="downloads/Technical-Datasheet.pdf"
+class="resource-card">
+
+<h3>
+
+Technical Datasheets
+
+</h3>
+
+<p>
+
+Detailed engineering
+documents.
+
+</p>
+
+<span>
+
+Download →
+
+</span>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<div class="container">
+
+<div class="contact-box">
+
+<div class="contact-left">
+
+<span>
+
+CONTACT
+
+</span>
+
+<h2>
+
+Ready to Build
+Your Next
+Robotics Project?
+
+</h2>
+
+<p>
+
+Whether you are looking for
+a harmonic reducer,
+joint module,
+OEM cooperation,
+or engineering support,
+our team is ready to help.
+
+</p>
+
+<a href="mailto:sales@xiorve.com"
+class="primary-btn">
+
+Get a Quote
+
+</a>
+
+</div>
+
+<div class="contact-right">
+
+<div class="contact-item">
+
+<h4>
+
+Email
+
+</h4>
+
+<p>
+
+sales@xiorve.com
+
+</p>
+
+</div>
+
+<div class="contact-item">
+
+<h4>
+
+WhatsApp
+
+</h4>
+
+<p>
+
++852 XXXXXXXX
+
+</p>
+
+</div>
+
+<div class="contact-item">
+
+<h4>
+
+Business Hours
+
+</h4>
+
+<p>
+
+Monday — Friday
+
+09:00 - 18:00 GMT+8
+
+</p>
+
+</div>
+
+<div class="contact-item">
+
+<h4>
+
+Target Market
+
+</h4>
+
+<p>
+
+Germany
+
+France
+
+Italy
+
+Netherlands
+
+Europe
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<div class="container">
+
+<div class="footer-top">
+
+<h2>
+
+XIORVE
+
+</h2>
+
+<p>
+
+Focused on Robotics.
+
+Built for Precision.
+
+</p>
+
+</div>
+
+<div class="footer-menu">
+
+<a href="#applications">
+
+Applications
+
+</a>
+
+<a href="#products">
+
+Products
+
+</a>
+
+<a href="#resources">
+
+Resources
+
+</a>
+
+<a href="#about">
+
+About
+
+</a>
+
+<a href="#contact">
+
+Contact
+
+</a>
+
+</div>
+
+<div class="footer-social">
+
+<a href="#">
+
+LinkedIn
+
+</a>
+
+<a href="#">
+
+GitHub
+
+</a>
+
+<a href="mailto:sales@xiorve.com">
+
+Email
+
+</a>
+
+<a href="#">
+
+WhatsApp
+
+</a>
+
+</div>
+
+<div class="footer-copy">
+
+<p>
+
+© 2026 XIORVE.
+
+All Rights Reserved.
+
+</p>
+
+</div>
+
+</div>
+
+</footer>
+
+<button id="backToTop">
+
+↑
+
+</button>
+
+</main>
+
+<script src="script.js"></script>
 
 </body>
+
 </html>
