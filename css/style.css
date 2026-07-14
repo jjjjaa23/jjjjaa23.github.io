@@ -1,0 +1,217 @@
+/* ===========================
+   XIORVE STYLE V1
+=========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial,Helvetica,sans-serif;
+color:#222;
+line-height:1.6;
+background:#fff;
+}
+
+img{
+width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+}
+
+ul{
+list-style:none;
+}
+
+.container{
+width:1200px;
+margin:auto;
+}
+
+.tag{
+display:inline-block;
+color:#0056ff;
+font-size:14px;
+font-weight:bold;
+letter-spacing:2px;
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+padding:14px 32px;
+background:#0056ff;
+color:#fff;
+border-radius:30px;
+transition:.3s;
+}
+
+.btn:hover{
+background:#003ecc;
+}
+
+.btn-outline{
+display:inline-block;
+padding:14px 32px;
+border:2px solid #0056ff;
+color:#0056ff;
+border-radius:30px;
+margin-left:15px;
+}
+
+.btn-outline:hover{
+background:#0056ff;
+color:#fff;
+}
+
+/* HEADER */
+
+.header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#fff;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+z-index:999;
+}
+
+.header .container{
+height:80px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo img{
+width:170px;
+}
+
+nav ul{
+display:flex;
+gap:35px;
+}
+
+nav a{
+color:#333;
+font-weight:600;
+}
+
+nav a:hover{
+color:#0056ff;
+}
+
+/* HERO */
+
+.hero{
+padding:150px 0 100px;
+background:#f8fbff;
+}
+
+.hero-box{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+gap:60px;
+}
+
+.hero-left h1{
+font-size:56px;
+line-height:1.1;
+margin-bottom:25px;
+}
+
+.hero-left p{
+font-size:18px;
+color:#666;
+margin-bottom:35px;
+}
+
+.hero-right img{
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* FEATURES */
+
+.features{
+padding:80px 0;
+}
+
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+}
+
+.feature{
+background:#fff;
+border-radius:15px;
+padding:40px 20px;
+text-align:center;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.feature i{
+font-size:38px;
+color:#0056ff;
+margin-bottom:20px;
+}
+
+.feature h3{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.feature p{
+color:#666;
+}
+
+/* ABOUT */
+
+.about{
+padding:100px 0;
+background:#f5f8fc;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about-center img{
+border-radius:18px;
+}
+
+.about-left h2{
+font-size:42px;
+margin:20px 0;
+}
+
+.about-left p{
+margin-bottom:30px;
+color:#666;
+}
+
+.about-item{
+display:flex;
+gap:15px;
+margin-bottom:25px;
+}
+
+.about-item i{
+font-size:28px;
+color:#0056ff;
+margin-top:5px;
+}
+
+.about-item h4{
+margin-bottom:8px;
+}
