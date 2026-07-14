@@ -1,1479 +1,1408 @@
-<!DOCTYPE html>
-<html lang="en">
+/* ===========================================
+   RESET
+=========================================== */
 
-<head>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    <meta charset="UTF-8">
+html{
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    scroll-behavior:smooth;
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+}
 
-    <!-- ========================= -->
-    <!-- SEO -->
-    <!-- ========================= -->
+body{
 
-    <title>XIORVE | Harmonic Reducers & Joint Modules for Robotics</title>
+    font-family:'Inter',sans-serif;
 
-    <meta name="description"
-        content="XIORVE specializes in Harmonic Reducers and Harmonic Joint Modules for Humanoid Robots, Collaborative Robots, Industrial Automation and Precision Motion Control.">
+    background:#ffffff;
 
-    <meta name="keywords"
-        content="Harmonic Reducer,Harmonic Drive,Robot Reducer,Harmonic Joint Module,Humanoid Robot,Industrial Robot,Cobot,Precision Motion,XIORVE">
+    color:#1f2937;
 
-    <meta name="author" content="XIORVE">
+    line-height:1.7;
 
-    <meta name="robots" content="index,follow">
+    overflow-x:hidden;
 
-    <!-- ========================= -->
-    <!-- Open Graph -->
-    <!-- ========================= -->
+}
 
-    <meta property="og:title"
-        content="XIORVE | Precision Motion Solutions">
+img{
 
-    <meta property="og:description"
-        content="Professional Harmonic Reducers & Harmonic Joint Modules for Robotics.">
+    max-width:100%;
 
-    <meta property="og:type" content="website">
+    display:block;
 
-    <meta property="og:image"
-        content="images/hero-robotics-banner.jpg">
+}
 
-    <meta property="og:url"
-        content="https://www.xiorve.com">
+a{
 
-    <!-- ========================= -->
-    <!-- Twitter -->
-    <!-- ========================= -->
+    text-decoration:none;
 
-    <meta name="twitter:card" content="summary_large_image">
+    color:inherit;
 
-    <meta name="twitter:title"
-        content="XIORVE">
+}
 
-    <meta name="twitter:description"
-        content="Precision Motion Solutions">
+ul{
 
-    <meta name="twitter:image"
-        content="images/hero-robotics-banner.jpg">
+    list-style:none;
 
-    <!-- ========================= -->
-    <!-- Google Fonts -->
-    <!-- ========================= -->
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+.container{
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    width:1200px;
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    max-width:92%;
 
-    <!-- ========================= -->
-    <!-- Font Awesome -->
-    <!-- ========================= -->
+    margin:auto;
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+}
 
-    <!-- ========================= -->
-    <!-- CSS -->
-    <!-- ========================= -->
+/* ===========================================
+   BUTTON
+=========================================== */
 
-    <link rel="stylesheet"
-        href="css/style.css">
+.primary-btn{
 
-    <!-- ========================= -->
-    <!-- Favicon -->
-    <!-- ========================= -->
+    display:inline-flex;
 
-    <link rel="icon"
-        type="image/png"
-        href="images/favicon.png">
+    align-items:center;
 
-</head>
+    justify-content:center;
 
-<body><!-- ========================================= -->
-<!-- HEADER -->
-<!-- ========================================= -->
+    padding:15px 34px;
 
-<header class="header">
+    background:#0057ff;
 
-    <div class="container">
+    color:#fff;
 
-        <!-- Logo -->
+    border-radius:50px;
 
-        <a href=" " class="logo">
+    font-weight:600;
 
-            < img src="images/logo.svg" alt="XIORVE Logo">
+    transition:.35s;
 
-        </a >
+}
 
-        <!-- Navigation -->
+.primary-btn:hover{
 
-        <nav class="navbar">
+    background:#0046d5;
 
-            <ul class="nav-menu">
+    transform:translateY(-3px);
 
-                <li><a href="#home">Home</a ></li>
+}
 
-                <li><a href="#applications">Applications</a ></li>
+.secondary-btn{
 
-                <li><a href="#products">Products</a ></li>
+    display:inline-flex;
 
-                <li><a href="#about">About</a ></li>
+    align-items:center;
 
-                <li><a href="#resources">Resources</a ></li>
+    justify-content:center;
 
-                <li><a href="#contact">Contact</a ></li>
+    padding:15px 34px;
 
-            </ul>
+    border:1px solid #d1d5db;
 
-        </nav>
+    border-radius:50px;
 
-        <!-- CTA -->
+    color:#1f2937;
 
-        <div class="header-action">
+    transition:.35s;
 
-            <a href="#quote" class="quote-btn">
+}
 
-                Get a Quote
+.secondary-btn:hover{
 
-            </a >
+    background:#0057ff;
 
-        </div>
+    color:#fff;
 
-        <!-- Mobile Menu -->
+    border-color:#0057ff;
 
-        <div class="mobile-menu">
+}
 
-            <i class="fa-solid fa-bars"></i>
+.text-btn{
 
-        </div>
+    color:#0057ff;
 
-    </div>
+    font-weight:600;
 
-</header>
+}
 
-<!-- ========================================= -->
-<!-- HOME -->
-<!-- ========================================= -->
+.resource-btn{
 
-<section id="home"></section>
+    display:inline-flex;
 
-<!-- ========================================= -->
-<!-- APPLICATIONS -->
-<!-- ========================================= -->
+    justify-content:center;
 
-<section id="applications"></section>
+    align-items:center;
 
-<!-- ========================================= -->
-<!-- PRODUCTS -->
-<!-- ========================================= -->
+    padding:12px 26px;
 
-<section id="products"></section>
+    background:#0057ff;
 
-<!-- ========================================= -->
-<!-- ABOUT -->
-<!-- ========================================= -->
+    color:#fff;
 
-<section id="about"></section>
+    border-radius:40px;
 
-<!-- ========================================= -->
-<!-- RESOURCES -->
-<!-- ========================================= -->
+    transition:.35s;
 
-<section id="resources"></section>
+}
 
-<!-- ========================================= -->
-<!-- CONTACT -->
-<!-- ========================================= -->
+.resource-btn:hover{
 
-<section id="contact"></section>
+    background:#003ec4;
 
-<!-- ========================================= -->
-<!-- QUOTE -->
-<!-- ========================================= -->
+}/* ===========================================
+   HEADER
+=========================================== */
 
-<section id="quote"></section><!-- ========================================= -->
-<!-- HERO BANNER -->
-<!-- ========================================= -->
+.header{
 
-<section class="hero-section" id="home">
+    width:100%;
 
-    <div class="container">
+    position:fixed;
 
-        <div class="hero-grid">
+    top:0;
 
-            <!-- Left Content -->
+    left:0;
 
-            <div class="hero-content">
+    z-index:999;
 
-                <span class="hero-tag">
+    background:#ffffff;
 
-                    XIORVE PRECISION MOTION
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
 
-                </span>
+}
 
-                <h1>
+.header .container{
 
-                    Built for Robotics.<br>
+    display:flex;
 
-                    Engineered for Precision.
+    justify-content:space-between;
 
-                </h1>
+    align-items:center;
 
-                <p>
+    height:82px;
 
-                    Professional Harmonic Reducers and Harmonic Joint Modules
-                    designed for humanoid robots, collaborative robots,
-                    industrial automation and intelligent motion systems.
+}
 
-                </p >
+.logo img{
 
-                <div class="hero-buttons">
+    height:44px;
 
-                    <a href=" " class="primary-btn">
+}
 
-                        Explore Products
+.nav-menu{
 
-                    </a >
+    display:flex;
 
-                    <a href="#contact" class="secondary-btn">
+    gap:36px;
 
-                        Get a Quote
+}
 
-                    </a >
+.nav-menu a{
 
-                </div>
+    font-size:15px;
 
-            </div>
+    font-weight:500;
 
-            <!-- Right Image -->
+    color:#374151;
 
-            <div class="hero-image">
+    transition:.3s;
 
-                < img src="images/hero-robotics-banner.jpg"
+}
 
-                    alt="XIORVE Harmonic Drive">
+.nav-menu a:hover{
 
-            </div>
+    color:#0057ff;
 
-        </div>
+}
 
-    </div>
+.quote-btn{
 
-</section><!-- ========================================= -->
-<!-- FEATURE STATISTICS -->
-<!-- ========================================= -->
+    padding:13px 28px;
 
-<section class="feature-stats">
+    background:#0057ff;
 
-    <div class="container">
+    color:#fff;
 
-        <div class="stats-grid">
+    border-radius:40px;
 
-            <!-- Item 1 -->
+    font-weight:600;
 
-            <div class="stat-card">
+    transition:.35s;
 
-                <div class="stat-icon">
+}
 
-                    <i class="fa-solid fa-bullseye"></i>
+.quote-btn:hover{
 
-                </div>
+    background:#0045cf;
 
-                <div class="stat-content">
+}
 
-                    <span class="stat-title">
+.mobile-menu{
 
-                        Precision
+    display:none;
 
-                    </span>
+    font-size:24px;
 
-                    <h3>
+    cursor:pointer;
 
-                        ≤ 20 arcsec
+}
 
-                    </h3>
+/* ===========================================
+   HERO
+=========================================== */
 
-                    <p>
+.hero-section{
 
-                        High positioning accuracy
+    padding:160px 0 110px;
 
-                    </p >
+    background:linear-gradient(135deg,#f8fbff,#ffffff);
 
-                </div>
+}
 
-            </div>
+.hero-grid{
 
-            <!-- Item 2 -->
+    display:grid;
 
-            <div class="stat-card">
+    grid-template-columns:1fr 1fr;
 
-                <div class="stat-icon">
+    align-items:center;
 
-                    <i class="fa-solid fa-layer-group"></i>
+    gap:80px;
 
-                </div>
+}
 
-                <div class="stat-content">
+.hero-tag{
 
-                    <span class="stat-title">
+    display:inline-block;
 
-                        High Torque Density
+    color:#0057ff;
 
-                    </span>
+    font-weight:700;
 
-                    <h3>
+    letter-spacing:1px;
 
-                        Up to 300%
+    margin-bottom:20px;
 
-                    </h3>
+}
 
-                    <p>
+.hero-content h1{
 
-                        Compact & powerful
+    font-size:58px;
 
-                    </p >
+    line-height:1.1;
 
-                </div>
+    font-weight:800;
 
-            </div>
+    margin-bottom:28px;
 
-            <!-- Item 3 -->
+}
 
-            <div class="stat-card">
+.hero-content p{
 
-                <div class="stat-icon">
+    font-size:18px;
 
-                    <i class="fa-solid fa-shield-halved"></i>
+    color:#6b7280;
 
-                </div>
+    margin-bottom:38px;
 
-                <div class="stat-content">
+}
 
-                    <span class="stat-title">
+.hero-buttons{
 
-                        High Reliability
+    display:flex;
 
-                    </span>
+    gap:18px;
 
-                    <h3>
+}
 
-                        ＞20,000 h
+.hero-image img{
 
-                    </h3>
+    border-radius:22px;
 
-                    <p>
+    box-shadow:0 25px 60px rgba(0,0,0,.12);
 
-                        Long service life
+}/* ===========================================
+   FEATURE STATISTICS
+=========================================== */
 
-                    </p >
+.feature-stats{
 
-                </div>
+    margin-top:-40px;
 
-            </div>
+    position:relative;
 
-            <!-- Item 4 -->
+    z-index:5;
 
-            <div class="stat-card">
+}
 
-                <div class="stat-icon">
+.stats-grid{
 
-                    <i class="fa-solid fa-globe"></i>
+    display:grid;
 
-                </div>
+    grid-template-columns:repeat(4,1fr);
 
-                <div class="stat-content">
+    gap:28px;
 
-                    <span class="stat-title">
+}
 
-                        Global Support
+.stat-card{
 
-                    </span>
+    background:#ffffff;
 
-                    <h3>
+    border-radius:18px;
 
-                        Europe Focused
+    padding:36px 30px;
 
-                    </h3>
+    box-shadow:0 15px 45px rgba(0,0,0,.06);
 
-                    <p>
+    transition:.35s;
 
-                        Local service & fast response
+}
 
-                    </p >
+.stat-card:hover{
 
-                </div>
+    transform:translateY(-8px);
 
-            </div>
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
 
-        </div>
+}
 
-    </div>
+.stat-icon{
 
-</section><!-- ========================================= -->
-<!-- ABOUT XIORVE -->
-<!-- ========================================= -->
+    width:62px;
 
-<section class="about-section" id="about">
+    height:62px;
 
-    <div class="container">
+    background:#0057ff;
 
-        <div class="about-grid">
+    color:#ffffff;
 
-            <!-- Left Content -->
+    border-radius:16px;
 
-            <div class="about-content">
+    display:flex;
 
-                <span class="section-tag">
+    justify-content:center;
 
-                    ABOUT XIORVE
+    align-items:center;
 
-                </span>
+    font-size:26px;
 
-                <h2>
+    margin-bottom:22px;
 
-                    Focus on Robotics.<br>
+}
 
-                    Dedicated to Motion Control.
+.stat-title{
 
-                </h2>
+    display:block;
 
-                <p>
+    color:#6b7280;
 
-                    XIORVE is a technology-driven company focused on robotic
-                    motion control components.
+    font-size:14px;
 
-                    Our harmonic reducers and harmonic joint modules are
-                    engineered for high precision, high reliability and
-                    long-term stability.
+    margin-bottom:8px;
 
-                </p >
+}
 
-                <a href=" " class="primary-btn">
+.stat-card h3{
 
-                    Learn More
+    font-size:28px;
 
-                </a >
+    color:#111827;
 
-            </div>
+    margin-bottom:10px;
 
-            <!-- Center Image -->
+}
 
-            <div class="about-image">
+.stat-card p{
 
-                < img src="images/about-company.jpg"
+    color:#6b7280;
 
-                    alt="XIORVE Factory">
+    font-size:15px;
 
-            </div>
+}
 
-            <!-- Right Features -->
+/* ===========================================
+   ABOUT
+=========================================== */
 
-            <div class="about-features">
+.about-section{
 
-                <!-- Item -->
+    padding:120px 0;
 
-                <div class="feature-box">
+}
 
-                    <div class="feature-icon">
+.about-grid{
 
-                        <i class="fa-solid fa-gears"></i>
+    display:grid;
 
-                    </div>
+    grid-template-columns:1fr 1fr 1fr;
 
-                    <div>
+    gap:60px;
 
-                        <h4>
+    align-items:center;
 
-                            Engineering Driven
+}
 
-                        </h4>
+.section-tag{
 
-                        <p>
+    color:#0057ff;
 
-                            Continuous innovation and
-                            product optimization.
+    font-size:14px;
 
-                        </p >
+    font-weight:700;
 
-                    </div>
+    letter-spacing:1px;
 
-                </div>
+    display:inline-block;
 
-                <!-- Item -->
+    margin-bottom:18px;
 
-                <div class="feature-box">
+}
 
-                    <div class="feature-icon">
+.about-content h2{
 
-                        <i class="fa-solid fa-medal"></i>
+    font-size:44px;
 
-                    </div>
+    line-height:1.2;
 
-                    <div>
+    margin-bottom:28px;
 
-                        <h4>
+}
 
-                            Quality First
+.about-content p{
 
-                        </h4>
+    color:#6b7280;
 
-                        <p>
+    margin-bottom:34px;
 
-                            Strict quality control and
-                            reliable manufacturing.
+}
 
-                        </p >
+.about-image img{
 
-                    </div>
+    border-radius:24px;
 
-                </div>
+    box-shadow:0 20px 60px rgba(0,0,0,.10);
 
-                <!-- Item -->
+}
 
-                <div class="feature-box">
+.about-features{
 
-                    <div class="feature-icon">
+    display:flex;
 
-                        <i class="fa-solid fa-handshake"></i>
+    flex-direction:column;
 
-                    </div>
+    gap:24px;
 
-                    <div>
+}
 
-                        <h4>
+.feature-box{
 
-                            Customer Success
+    display:flex;
 
-                        </h4>
+    gap:18px;
 
-                        <p>
+    background:#ffffff;
 
-                            Long-term partnership and
-                            value creation.
+    border-radius:18px;
 
-                        </p >
+    padding:24px;
 
-                    </div>
+    box-shadow:0 10px 35px rgba(0,0,0,.05);
 
-                </div>
+}
 
-            </div>
+.feature-icon{
 
-        </div>
+    width:54px;
 
-    </div>
+    height:54px;
 
-</section><!-- ========================================= -->
-<!-- APPLICATIONS -->
-<!-- ========================================= -->
+    background:#0057ff;
 
-<section class="applications-section" id="applications">
+    color:#ffffff;
 
-    <div class="container">
+    border-radius:14px;
 
-        <div class="section-header">
+    display:flex;
 
-            <span class="section-tag">
+    justify-content:center;
 
-                APPLICATIONS
+    align-items:center;
 
-            </span>
+    font-size:22px;
 
-            <h2>
+}
 
-                Precision Motion Solutions<br>
+.feature-box h4{
 
-                Across Robotics Industries
+    margin-bottom:8px;
 
-            </h2>
+    font-size:18px;
 
-            <p>
+}
 
-                XIORVE harmonic reducers and joint modules are widely used in
-                next-generation robotics and intelligent automation systems.
+.feature-box p{
 
-            </p >
+    color:#6b7280;
 
-        </div>
+    font-size:15px;
 
-        <div class="application-grid">
+}/* ===========================================
+   APPLICATIONS
+=========================================== */
 
-            <!-- Card 01 -->
+.applications-section{
 
-            <div class="application-card">
+    padding:120px 0;
 
-                < img src="images/application-humanoid-robot.jpg"
-                    alt="Humanoid Robot">
+    background:#f8fbff;
 
-                <div class="application-info">
+}
 
-                    <h3>
+.section-header{
 
-                        Humanoid Robots
+    text-align:center;
 
-                    </h3>
+    max-width:760px;
 
-                    <p>
+    margin:0 auto 70px;
 
-                        High precision joint motion
-                        for next-generation humanoid robots.
+}
 
-                    </p >
+.section-header h2{
 
-                </div>
+    font-size:46px;
 
-            </div>
+    line-height:1.2;
 
-            <!-- Card 02 -->
+    margin:18px 0 22px;
 
-            <div class="application-card">
+    color:#111827;
 
-                < img src="images/application-collaborative-robot.jpg"
-                    alt="Collaborative Robot">
+}
 
-                <div class="application-info">
+.section-header p{
 
-                    <h3>
+    color:#6b7280;
 
-                        Collaborative Robots
+    font-size:17px;
 
-                    </h3>
+}
 
-                    <p>
+.application-grid{
 
-                        Compact harmonic drive solutions
-                        for collaborative automation.
+    display:grid;
 
-                    </p >
+    grid-template-columns:repeat(4,1fr);
 
-                </div>
+    gap:28px;
 
-            </div>
+}
 
-            <!-- Card 03 -->
+.application-card{
 
-            <div class="application-card">
+    background:#ffffff;
 
-                < img src="images/application-industrial-robot.jpg"
-                    alt="Industrial Robot">
+    border-radius:22px;
 
-                <div class="application-info">
+    overflow:hidden;
 
-                    <h3>
+    transition:.35s;
 
-                        Industrial Automation
+    box-shadow:0 12px 35px rgba(0,0,0,.06);
 
-                    </h3>
+}
 
-                    <p>
+.application-card:hover{
 
-                        Reliable precision transmission
-                        for industrial robot systems.
+    transform:translateY(-10px);
 
-                    </p >
+    box-shadow:0 30px 60px rgba(0,0,0,.12);
 
-                </div>
+}
 
-            </div>
+.application-card img{
 
-            <!-- Card 04 -->
+    width:100%;
 
-            <div class="application-card">
+    height:260px;
 
-                < img src="images/application-medical-robot.jpg"
-                    alt="Medical Robot">
+    object-fit:cover;
 
-                <div class="application-info">
+    transition:.45s;
 
-                    <h3>
+}
 
-                        Medical Robotics
+.application-card:hover img{
 
-                    </h3>
+    transform:scale(1.08);
 
-                    <p>
+}
 
-                        Smooth and accurate motion
-                        for advanced medical equipment.
+.application-info{
 
-                    </p >
+    padding:28px;
 
-                </div>
+}
 
-            </div>
+.application-info h3{
 
-        </div>
+    font-size:22px;
 
-    </div>
+    margin-bottom:12px;
 
-</section><!-- ========================================= -->
-<!-- PRECISION BANNER -->
-<!-- ========================================= -->
+    color:#111827;
 
-<section class="precision-banner">
+}
 
-    <div class="banner-overlay"></div>
+.application-info p{
 
-    <div class="container">
+    font-size:15px;
 
-        <div class="banner-content">
+    color:#6b7280;
 
-            <span class="banner-tag">
+    line-height:1.7;
 
-                XIORVE PRECISION MOTION
+}
 
-            </span>
+/* ===========================================
+   PRECISION BANNER
+=========================================== */
 
-            <h2>
+.precision-banner{
 
-                Precision in Every Motion.<br>
+    position:relative;
 
-                Designed for Tomorrow's Robotics.
+    padding:130px 0;
 
-            </h2>
+    background:url("../images/hero-robotics-banner.jpg") center center/cover no-repeat;
 
-            <p>
+    overflow:hidden;
 
-                From harmonic reducers to integrated joint modules,
+}
 
-                we deliver compact, reliable and highly efficient
+.banner-overlay{
 
-                motion solutions for intelligent robotics worldwide.
+    position:absolute;
 
-            </p >
+    inset:0;
 
-            <div class="banner-buttons">
+    background:linear-gradient(135deg,
+    rgba(0,32,90,.88),
+    rgba(0,87,255,.82));
 
-                <a href=" "
+}
 
-                    class="primary-btn">
+.banner-content{
 
-                    Explore Products
+    position:relative;
 
-                </a >
+    z-index:2;
 
-                <a href="#contact"
+    max-width:760px;
 
-                    class="secondary-btn">
+    color:#ffffff;
 
-                    Contact Us
+}
 
-                </a >
+.banner-tag{
 
-            </div>
+    display:inline-block;
 
-        </div>
+    font-size:14px;
 
-    </div>
+    letter-spacing:2px;
 
-</section><!-- ========================================= -->
-<!-- PRODUCTS -->
-<!-- ========================================= -->
+    font-weight:700;
 
-<section class="products-section" id="products">
+    margin-bottom:22px;
 
-    <div class="container">
+    opacity:.9;
 
-        <div class="section-header">
+}
 
-            <span class="section-tag">
+.banner-content h2{
 
-                PRODUCTS
+    font-size:52px;
 
-            </span>
+    line-height:1.15;
 
-            <h2>
+    margin-bottom:28px;
 
-                Professional Motion<br>
+    font-weight:800;
 
-                Components for Robotics
+}
 
-            </h2>
+.banner-content p{
 
-            <p>
+    font-size:18px;
 
-                XIORVE provides precision harmonic reducers and harmonic joint
-                modules designed for demanding robotic applications.
+    line-height:1.9;
 
-            </p >
+    opacity:.92;
 
-        </div>
+    margin-bottom:40px;
 
-        <div class="products-grid">
+}
 
-            <!-- ================================= -->
-            <!-- Harmonic Reducer -->
-            <!-- ================================= -->
+.banner-buttons{
 
-            <div class="product-card">
+    display:flex;
 
-                <div class="product-image">
+    gap:20px;
 
-                    < img src="images/product-harmonic-reducer.jpg"
+}
 
-                        alt="Harmonic Reducer">
+.precision-banner .secondary-btn{
 
-                </div>
+    border:1px solid rgba(255,255,255,.45);
 
-                <div class="product-content">
+    color:#ffffff;
 
-                    <span class="product-category">
+}
 
-                        Harmonic Drive
+.precision-banner .secondary-btn:hover{
 
-                    </span>
+    background:#ffffff;
 
-                    <h3>
+    color:#0057ff;
 
-                        Harmonic Reducer
+}/* ===========================================
+   PRODUCTS
+=========================================== */
 
-                    </h3>
+.products-section{
 
-                    <p>
+    padding:120px 0;
 
-                        High precision transmission solution for humanoid robots,
-                        collaborative robots and industrial automation.
+    background:#ffffff;
 
-                    </p >
+}
 
-                    <ul class="product-features">
+.products-grid{
 
-                        <li>Ultra High Precision</li>
+    display:grid;
 
-                        <li>Compact Structure</li>
+    grid-template-columns:repeat(2,1fr);
 
-                        <li>High Torque Density</li>
+    gap:40px;
 
-                        <li>Long Service Life</li>
+}
 
-                    </ul>
+.product-card{
 
-                    <div class="product-buttons">
+    background:#ffffff;
 
-                        <a href=" "
+    border-radius:24px;
 
-                            class="primary-btn">
+    overflow:hidden;
 
-                            Request Quote
+    box-shadow:0 15px 45px rgba(0,0,0,.06);
 
-                        </a >
+    transition:.35s;
 
-                        <a href="downloads/HarmonicReducer.pdf"
+}
 
-                            class="text-btn">
+.product-card:hover{
 
-                            Download PDF
+    transform:translateY(-10px);
 
-                        </a >
+    box-shadow:0 35px 70px rgba(0,0,0,.12);
 
-                    </div>
+}
 
-                </div>
+.product-image{
 
-            </div>
+    overflow:hidden;
 
-            <!-- ================================= -->
-            <!-- Harmonic Joint Module -->
-            <!-- ================================= -->
+}
 
-            <div class="product-card">
+.product-image img{
 
-                <div class="product-image">
+    width:100%;
 
-                    < img src="images/product-harmonic-joint-module.jpg"
+    height:360px;
 
-                        alt="Harmonic Joint Module">
+    object-fit:cover;
 
-                </div>
+    transition:.45s;
 
-                <div class="product-content">
+}
 
-                    <span class="product-category">
+.product-card:hover img{
 
-                        Integrated Joint
+    transform:scale(1.06);
 
-                    </span>
+}
 
-                    <h3>
+.product-content{
 
-                        Harmonic Joint Module
+    padding:36px;
 
-                    </h3>
+}
 
-                    <p>
+.product-category{
 
-                        Integrated actuator module combining harmonic reducer,
-                        motor and encoder for intelligent robotic joints.
+    display:inline-block;
 
-                    </p >
+    color:#0057ff;
 
-                    <ul class="product-features">
+    font-size:13px;
 
-                        <li>Integrated Servo Solution</li>
+    font-weight:700;
 
-                        <li>Plug & Play Design</li>
+    letter-spacing:1px;
 
-                        <li>High Dynamic Response</li>
+    margin-bottom:12px;
 
-                        <li>Easy Integration</li>
+}
 
-                    </ul>
+.product-content h3{
 
-                    <div class="product-buttons">
+    font-size:30px;
 
-                        <a href="#contact"
+    margin-bottom:18px;
 
-                            class="primary-btn">
+    color:#111827;
 
-                            Request Quote
+}
 
-                        </a >
+.product-content p{
 
-                        <a href="downloads/HarmonicJointModule.pdf"
+    color:#6b7280;
 
-                            class="text-btn">
+    margin-bottom:24px;
 
-                            Download PDF
+    line-height:1.8;
 
-                        </a >
+}
 
-                    </div>
+.product-features{
 
-                </div>
+    margin-bottom:32px;
 
-            </div>
+}
 
-        </div>
+.product-features li{
 
-    </div>
+    padding:10px 0;
 
-</section><!-- ========================================= -->
-<!-- RESOURCES -->
-<!-- ========================================= -->
+    color:#374151;
 
-<section class="resources-section" id="resources">
+    border-bottom:1px solid #eef2f7;
 
-    <div class="container">
+}
 
-        <div class="section-header">
+.product-buttons{
 
-            <span class="section-tag">
+    display:flex;
 
-                RESOURCES
+    gap:18px;
 
-            </span>
+    align-items:center;
 
-            <h2>
+}
 
-                Everything You Need.<br>
+/* ===========================================
+   WHY XIORVE
+=========================================== */
 
-                Ready to Download.
+.why-section{
 
-            </h2>
+    padding:120px 0;
 
-            <p>
+    background:#f8fbff;
 
-                Access our latest catalogs, company profile, technical
-                datasheets and OEM cooperation documents.
+}
 
-            </p >
+.why-grid{
 
-        </div>
+    display:grid;
 
-        <div class="resources-grid">
+    grid-template-columns:repeat(4,1fr);
 
-            <!-- Product Catalog -->
+    gap:28px;
 
-            <div class="resource-card">
+}
 
-                <div class="resource-icon">
+.why-card{
 
-                    <i class="fa-solid fa-book-open"></i>
+    background:#ffffff;
 
-                </div>
+    border-radius:22px;
 
-                <h3>
+    padding:40px 30px;
 
-                    Product Catalog
+    text-align:center;
 
-                </h3>
+    transition:.35s;
 
-                <p>
+    box-shadow:0 12px 35px rgba(0,0,0,.05);
 
-                    Complete product portfolio including harmonic reducers,
-                    harmonic joint modules and technical specifications.
+}
 
-                </p >
+.why-card:hover{
 
-                <a href=" "
+    transform:translateY(-10px);
 
-                    class="resource-btn"
+    box-shadow:0 35px 70px rgba(0,0,0,.10);
 
-                    download>
+}
 
-                    Download PDF
+.why-icon{
 
-                </a >
+    width:74px;
 
-            </div>
+    height:74px;
 
-            <!-- Company Profile -->
+    margin:0 auto 26px;
 
-            <div class="resource-card">
+    border-radius:20px;
 
-                <div class="resource-icon">
+    background:#0057ff;
 
-                    <i class="fa-solid fa-building"></i>
+    color:#ffffff;
 
-                </div>
+    display:flex;
 
-                <h3>
+    justify-content:center;
 
-                    Company Profile
+    align-items:center;
 
-                </h3>
+    font-size:30px;
 
-                <p>
+}
 
-                    Learn more about XIORVE,
-                    our manufacturing capability,
-                    engineering philosophy and global strategy.
+.why-card h3{
 
-                </p >
+    font-size:22px;
 
-                <a href="downloads/Company-Profile.pdf"
+    margin-bottom:16px;
 
-                    class="resource-btn"
+    color:#111827;
 
-                    download>
+}
 
-                    Download PDF
+.why-card p{
 
-                </a >
+    color:#6b7280;
 
-            </div>
+    line-height:1.8;
 
-            <!-- Datasheet -->
+    font-size:15px;
 
-            <div class="resource-card">
+}/* ===========================================
+   RESOURCES
+=========================================== */
 
-                <div class="resource-icon">
+.resources-section{
 
-                    <i class="fa-solid fa-file-lines"></i>
+    padding:120px 0;
 
-                </div>
+    background:#ffffff;
 
-                <h3>
+}
 
-                    Technical Datasheets
+.resources-grid{
 
-                </h3>
+    display:grid;
 
-                <p>
+    grid-template-columns:repeat(4,1fr);
 
-                    Product dimensions,
-                    performance,
-                    accuracy,
-                    torque and installation information.
+    gap:30px;
 
-                </p >
+}
 
-                <a href="downloads/Technical-Datasheet.pdf"
+.resource-card{
 
-                    class="resource-btn"
+    background:#ffffff;
 
-                    download>
+    border-radius:22px;
 
-                    Download PDF
+    padding:40px 30px;
 
-                </a >
+    text-align:center;
 
-            </div>
+    box-shadow:0 15px 40px rgba(0,0,0,.05);
 
-            <!-- OEM -->
+    transition:.35s;
 
-            <div class="resource-card">
+}
 
-                <div class="resource-icon">
+.resource-card:hover{
 
-                    <i class="fa-solid fa-handshake"></i>
+    transform:translateY(-10px);
 
-                </div>
+    box-shadow:0 30px 70px rgba(0,0,0,.12);
 
-                <h3>
+}
 
-                    OEM / ODM Guide
+.resource-icon{
 
-                </h3>
+    width:70px;
 
-                <p>
+    height:70px;
 
-                    Customized motion solutions,
-                    branding,
-                    technical cooperation
-                    and project support.
+    margin:0 auto 24px;
 
-                </p >
+    border-radius:18px;
 
-                <a href="downloads/OEM-Guide.pdf"
+    background:#0057ff;
 
-                    class="resource-btn"
+    color:#ffffff;
 
-                    download>
+    display:flex;
 
-                    Download PDF
+    justify-content:center;
 
-                </a >
+    align-items:center;
 
-            </div>
+    font-size:30px;
 
-        </div>
+}
 
-    </div>
+.resource-card h3{
 
-</section><!-- ========================================= -->
-<!-- CONTACT -->
-<!-- ========================================= -->
+    font-size:22px;
 
-<section class="contact-section" id="contact">
+    margin-bottom:16px;
 
-    <div class="container">
+}
 
-        <div class="contact-grid">
+.resource-card p{
 
-            <!-- Left -->
+    color:#6b7280;
 
-            <div class="contact-left">
+    margin-bottom:30px;
 
-                <span class="section-tag">
+    line-height:1.8;
 
-                    CONTACT
+}
 
-                </span>
+/* ===========================================
+   CONTACT
+=========================================== */
 
-                <h2>
+.contact-section{
 
-                    Ready to Build<br>
+    padding:120px 0;
 
-                    Your Next Robotics Project?
+    background:#111827;
 
-                </h2>
+    color:#ffffff;
 
-                <p>
+}
 
-                    Whether you're developing humanoid robots,
-                    collaborative robots or industrial automation systems,
-                    our engineering team is ready to support your project.
+.contact-grid{
 
-                </p >
+    display:grid;
 
-                <div class="contact-info">
+    grid-template-columns:1.2fr .8fr;
 
-                    <div class="contact-item">
+    gap:70px;
 
-                        <i class="fa-solid fa-envelope"></i>
+    align-items:center;
 
-                        <div>
+}
 
-                            <h4>Email</h4>
+.contact-left h2{
 
-                            <p>sales@xiorve.com</p >
+    font-size:48px;
 
-                        </div>
+    line-height:1.2;
 
-                    </div>
+    margin:20px 0 28px;
 
-                    <div class="contact-item">
+}
 
-                        <i class="fa-brands fa-whatsapp"></i>
+.contact-left p{
 
-                        <div>
+    color:#cbd5e1;
 
-                            <h4>WhatsApp</h4>
+    margin-bottom:40px;
 
-                            <p>Hong Kong Business Line</p >
+}
 
-                        </div>
+.contact-info{
 
-                    </div>
+    display:flex;
 
-                    <div class="contact-item">
+    flex-direction:column;
 
-                        <i class="fa-solid fa-clock"></i>
+    gap:24px;
 
-                        <div>
+}
 
-                            <h4>Response Time</h4>
+.contact-item{
 
-                            <p>Within 12–24 Hours</p >
+    display:flex;
 
-                        </div>
+    gap:18px;
 
-                    </div>
+    align-items:flex-start;
 
-                    <div class="contact-item">
+}
 
-                        <i class="fa-solid fa-earth-europe"></i>
+.contact-item i{
 
-                        <div>
+    font-size:22px;
 
-                            <h4>Primary Market</h4>
+    color:#3b82f6;
 
-                            <p>Europe · United Kingdom · North America</p >
+    margin-top:4px;
 
-                        </div>
+}
 
-                    </div>
+.quote-box{
 
-                </div>
+    background:#1f2937;
 
-            </div>
+    border-radius:24px;
 
-            <!-- Right -->
+    padding:45px;
 
-            <div class="contact-right">
+}
 
-                <div class="quote-box">
+.quote-box h3{
 
-                    <h3>
+    font-size:34px;
 
-                        Get a Quote
+    margin-bottom:18px;
 
-                    </h3>
+}
 
-                    <p>
+.quote-box p{
 
-                        Send your project requirements,
-                        drawings or specifications.
+    color:#d1d5db;
 
-                        We will provide professional support
-                        and quotation within 24 hours.
+    margin-bottom:34px;
 
-                    </p >
+    line-height:1.8;
 
-                    <a href=" "
+}
 
-                        class="primary-btn">
+.quote-box .primary-btn{
 
-                        Email Us
+    width:100%;
 
-                    </a >
+    margin-bottom:16px;
 
-                    <a href="#"
+}
 
-                        class="secondary-btn">
+.quote-box .secondary-btn{
 
-                        WhatsApp Chat
+    width:100%;
 
-                    </a >
+    color:#ffffff;
 
-                </div>
+    border-color:#475569;
 
-            </div>
+}
 
-        </div>
+/* ===========================================
+   FOOTER
+=========================================== */
 
-    </div>
+.footer{
 
-</section><!-- ========================================= -->
-<!-- FOOTER -->
-<!-- ========================================= -->
+    background:#0f172a;
 
-<footer class="footer">
+    color:#94a3b8;
 
-    <div class="container">
+    padding:80px 0 30px;
 
-        <div class="footer-grid">
+}
 
-            <!-- Company -->
+.footer-grid{
 
-            <div class="footer-column">
+    display:grid;
 
-                < img src="images/logo-white.svg"
+    grid-template-columns:2fr 1fr 1fr 1fr;
 
-                    alt="XIORVE Logo"
+    gap:50px;
 
-                    class="footer-logo">
+    margin-bottom:50px;
 
-                <p>
+}
 
-                    XIORVE specializes in Harmonic Reducers
-                    and Harmonic Joint Modules for
-                    next-generation robotics and
-                    precision motion control.
+.footer-logo{
 
-                </p >
+    height:42px;
 
-            </div>
+    margin-bottom:24px;
 
-            <!-- Navigation -->
+}
 
-            <div class="footer-column">
+.footer-column h4{
 
-                <h4>
+    color:#ffffff;
 
-                    Navigation
+    margin-bottom:22px;
 
-                </h4>
+}
 
-                <ul>
+.footer-column ul li{
 
-                    <li><a href=" ">Home</a ></li>
+    margin-bottom:14px;
 
-                    <li><a href="#applications">Applications</a ></li>
+}
 
-                    <li><a href="#products">Products</a ></li>
+.footer-column a:hover{
 
-                    <li><a href="#about">About</a ></li>
+    color:#ffffff;
 
-                    <li><a href="#resources">Resources</a ></li>
+}
 
-                    <li><a href="#contact">Contact</a ></li>
+.footer-bottom{
 
-                </ul>
+    border-top:1px solid rgba(255,255,255,.08);
 
-            </div>
+    padding-top:28px;
 
-            <!-- Products -->
+    display:flex;
 
-            <div class="footer-column">
+    justify-content:space-between;
 
-                <h4>
+    align-items:center;
 
-                    Products
+}
 
-                </h4>
+.footer-links{
 
-                <ul>
+    display:flex;
 
-                    <li>
+    gap:24px;
 
-                        Harmonic Reducer
+}
 
-                    </li>
+/* ===========================================
+   BACK TO TOP
+=========================================== */
 
-                    <li>
+#backToTop{
 
-                        Harmonic Joint Module
+    position:fixed;
 
-                    </li>
+    right:35px;
 
-                    <li>
+    bottom:35px;
 
-                        OEM Solutions
+    width:52px;
 
-                    </li>
+    height:52px;
 
-                    <li>
+    border:none;
 
-                        Technical Support
+    border-radius:50%;
 
-                    </li>
+    background:#0057ff;
 
-                </ul>
+    color:#ffffff;
 
-            </div>
+    font-size:18px;
 
-            <!-- Contact -->
+    cursor:pointer;
 
-            <div class="footer-column">
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
 
-                <h4>
+    transition:.35s;
 
-                    Contact
+}
 
-                </h4>
+#backToTop:hover{
 
-                <ul>
+    transform:translateY(-6px);
 
-                    <li>
+}
 
-                        sales@xiorve.com
+/* ===========================================
+   RESPONSIVE
+=========================================== */
 
-                    </li>
+@media(max-width:991px){
 
-                    <li>
+.hero-grid,
+.about-grid,
+.products-grid,
+.contact-grid{
 
-                        Hong Kong Business Office
+grid-template-columns:1fr;
 
-                    </li>
+}
 
-                    <li>
+.application-grid,
+.stats-grid,
+.resources-grid,
+.why-grid{
 
-                        Europe Focused
+grid-template-columns:repeat(2,1fr);
 
-                    </li>
+}
 
-                    <li>
+.footer-grid{
 
-                        Response Within 24 Hours
+grid-template-columns:1fr 1fr;
 
-                    </li>
+}
 
-                </ul>
+}
 
-            </div>
+@media(max-width:768px){
 
-        </div>
+.navbar{
 
-        <div class="footer-bottom">
+display:none;
 
-            <div class="copyright">
+}
 
-                © 2026 XIORVE.
+.mobile-menu{
 
-                All Rights Reserved.
+display:block;
 
-            </div>
+}
 
-            <div class="footer-links">
+.hero-content h1{
 
-                <a href="#">
+font-size:40px;
 
-                    Privacy Policy
+}
 
-                </a >
+.section-header h2{
 
-                <a href="#">
+font-size:34px;
 
-                    Terms of Use
+}
 
-                </a >
+.application-grid,
+.stats-grid,
+.resources-grid,
+.why-grid{
 
-                <a href="#">
+grid-template-columns:1fr;
 
-                    Sitemap
+}
 
-                </a >
+.footer-grid{
 
-            </div>
+grid-template-columns:1fr;
 
-        </div>
+}
 
-    </div>
+.footer-bottom{
 
-</footer>
+flex-direction:column;
 
-<!-- ========================================= -->
-<!-- BACK TO TOP -->
-<!-- ========================================= -->
+gap:18px;
 
-<button id="backToTop">
+text-align:center;
 
-    <i class="fa-solid fa-arrow-up"></i>
+}
 
-</button>
-
-<!-- ========================================= -->
-<!-- JAVASCRIPT -->
-<!-- ========================================= -->
-
-<script src="js/main.js"></script>
-
-</body>
-
-</html>
+}
