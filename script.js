@@ -1,44 +1,49 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const backToTopBtn = document.getElementById("backToTop");
+document.addEventListener("DOMContentLoaded", () => {
     const header = document.querySelector(".header");
+    const backToTopBtn = document.getElementById("backToTop");
 
-    // 1. 监听滚动条事件
-    window.addEventListener("scroll", function () {
-        // 滚动超过 300px 显示回到顶部按钮
-        if (window.scrollY > 300) {
+    // 1. 监听滚动 - 让导航栏在滚动时添加立体阴影
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+            header.style.boxShadow = "var(--shadow-md)";
+            header.style.backgroundColor = "rgba(255, 255, 255, 0.95)";
+        } else {
+            header.style.boxShadow = "none";
+            header.style.backgroundColor = "rgba(255, 255, 255, 0.85)";
+        }
+
+        // 2. 显示或隐藏“返回顶部”按钮
+        if (window.scrollY > 400) {
             backToTopBtn.style.display = "flex";
         } else {
             backToTopBtn.style.display = "none";
         }
-
-        // 滚动时让导航栏产生微小收缩，更具动感
-        if (window.scrollY > 50) {
-            header.classList.add("shrink");
-        } else {
-            header.classList.remove("shrink");
-        }
     });
 
-    // 2. 点击回到顶部
-    backToTopBtn.addEventListener("click", function () {
+    // 3. 点击返回顶部逻辑
+    backToTopBtn.addEventListener("click", () => {
         window.scrollTo({
             top: 0,
             behavior: "smooth"
         });
     });
 
-    // 3. 锚点流畅跳转
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            if (targetId === '#') return;
-            
-            const targetElement = document.querySelector(targetId);
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
+    // 4. 平滑滚动锚点
+    const navLinks = document.querySelectorAll("nav a, .footer-nav a, a[href^='#']");
+    navLinks.forEach(link => {
+        link.addEventListener("click", function (e) {
+            const targetId = this.getAttribute("href");
+            if (targetId.startsWith("#") && targetId.length > 1) {
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // 扣除导航栏高度 (72px)
+                    const offsetPosition = targetElement.offsetTop - 72;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
             }
         });
     });
