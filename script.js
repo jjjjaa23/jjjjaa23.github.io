@@ -1,29 +1,45 @@
-document.addEventListener('DOMContentLoaded', () => {
-  // Back to Top functionality
-  const backToTopBtn = document.getElementById('backToTop');
+document.addEventListener("DOMContentLoaded", function () {
+    const backToTopBtn = document.getElementById("backToTop");
+    const header = document.querySelector(".header");
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      backToTopBtn.classList.add('show');
-    } else {
-      backToTopBtn.classList.remove('show');
-    }
-  });
+    // 1. 监听滚动条事件
+    window.addEventListener("scroll", function () {
+        // 滚动超过 300px 显示回到顶部按钮
+        if (window.scrollY > 300) {
+            backToTopBtn.style.display = "flex";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
 
-  backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+        // 滚动时让导航栏产生微小收缩，更具动感
+        if (window.scrollY > 50) {
+            header.classList.add("shrink");
+        } else {
+            header.classList.remove("shrink");
+        }
     });
-  });
 
-  // Dynamic header styling on scroll
-  const header = document.querySelector('.header');
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-    } else {
-      header.style.backgroundColor = 'rgba(255, 255, 255, 0.82)';
-    }
-  });
+    // 2. 点击回到顶部
+    backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    // 3. 锚点流畅跳转
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 });
