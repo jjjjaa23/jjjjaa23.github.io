@@ -1,33 +1,45 @@
-// Back to top button functionality
-const backToTopBtn = document.getElementById('backToTop');
+document.addEventListener("DOMContentLoaded", function () {
+    const backToTopBtn = document.getElementById("backToTop");
+    const header = document.querySelector(".header");
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-        backToTopBtn.style.display = 'flex';
-    } else {
-        backToTopBtn.style.display = 'none';
-    }
-});
+    // 1. 监听滚动条事件
+    window.addEventListener("scroll", function () {
+        // 滚动超过 300px 显示回到顶部按钮
+        if (window.scrollY > 300) {
+            backToTopBtn.style.display = "flex";
+        } else {
+            backToTopBtn.style.display = "none";
+        }
 
-backToTopBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+        // 滚动时让导航栏产生微小收缩，更具动感
+        if (window.scrollY > 50) {
+            header.classList.add("shrink");
+        } else {
+            header.classList.remove("shrink");
+        }
     });
-});
 
-// Smooth scroll for nav links
-document.querySelectorAll('nav a, .footer-nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        const targetId = this.getAttribute('href');
-        if (targetId.startsWith('#') && targetId.length > 1) {
+    // 2. 点击回到顶部
+    backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    // 3. 锚点流畅跳转
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 targetElement.scrollIntoView({
                     behavior: 'smooth'
                 });
             }
-        }
+        });
     });
 });
