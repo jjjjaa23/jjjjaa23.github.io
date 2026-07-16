@@ -1,80 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>XIORVE | Precision Motion Solutions</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XIORVE | Precision Robotic Motion</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-<div class="logo">XIORVE</div>
-<nav>
-<a>Home</a><a>Products</a><a>Applications</a><a>Resources</a><a>Contact</a>
-</nav>
-<button>Get a Quote</button>
-</header>
-
-<section class="hero">
-<div class="hero-content">
-<p class="tag">PRECISION MOTION SOLUTIONS</p>
-<h1>Built for Robotics.<br>Engineered for Precision.</h1>
-<p>XIORVE specializes in harmonic reducers and joint modules for humanoid robots, collaborative robots and industrial automation.</p>
-<div><button>View Products</button><button class="light">Download Catalog</button></div>
-</div>
-<div class="hero-img"></div>
-</section>
-
-<section class="stats">
-<div><b>≤20 arcsec</b><span>Precision</span></div>
-<div><b>300%</b><span>Torque Density</span></div>
-<div><b>20,000h+</b><span>Reliability</span></div>
-<div><b>Global</b><span>Support</span></div>
-</section>
-
-<section>
-<h2>Core Products</h2>
-<div class="products">
-<div class="card">
-<img src="images/reducer.jpg">
-<h3>Harmonic Reducers</h3>
-<p>High precision transmission components designed for robotic motion control.</p>
-</div>
-<div class="card">
-<img src="images/joint-module.jpg">
-<h3>Harmonic Joint Modules</h3>
-<p>Integrated motion solutions combining precision, rigidity and reliability.</p>
-</div>
-</div>
-</section>
-
-<section class="applications">
-<h2>Applications</h2>
-<div class="apps">
-<div><img src="images/humanoid.jpg"><h3>Humanoid Robots</h3></div>
-<div><img src="images/cobot.jpg"><h3>Collaborative Robots</h3></div>
-<div><img src="images/industrial.jpg"><h3>Industrial Robots</h3></div>
-<div><img src="images/medical.jpg"><h3>Medical Robots</h3></div>
-</div>
-</section>
-
-<section>
-<h2>Resources</h2>
-<div class="resources">
-<div>Product Catalog</div>
-<div>Technical Datasheet</div>
-<div>Installation Guide</div>
-<div>OEM Guide</div>
-</div>
-</section>
-
-<section class="contact">
-<h2>Ready to Build Your Robotics Project?</h2>
-<p>Email: sales@xiorve.com</p>
-<p>WhatsApp: +86 XXX XXXX XXXX</p>
-</section>
-
-<footer>XIORVE © 2026 Precision Motion Solutions</footer>
-<script src="js/main.js"></script>
+    <main>
+        <section class="products-section">
+            <div class="container">
+                <h2 class="section-title">Core Components</h2>
+                <div class="products-grid">
+                    <div class="card product-card">
+                        <img src="images/prod-reducer.png" alt="Harmonic Reducer">
+                        <h3>Harmonic Reducer</h3>
+                        <p>High precision, compact structure.</p>
+                    </div>
+                    <div class="card product-card">
+                        <img src="images/prod-module.png" alt="Joint Module">
+                        <h3>Joint Module</h3>
+                        <p>Integrated motion control.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="download-section">
+    <div class="container">
+        <h2 class="section-title">Technical Downloads</h2>
+        <div class="download-grid">
+            <a href="files/catalogue.pdf" class="download-card" download>
+                <h3>Product Catalogue</h3>
+                <p>Full Specification Manual</p>
+            </a>
+            <a href="files/cad-models.zip" class="download-card" download>
+                <h3>CAD Models</h3>
+                <p>3D STEP Files & Drawings</p>
+            </a>
+            <a href="files/tech-specs.pdf" class="download-card" download>
+                <h3>Technical Specs</h3>
+                <p>Performance Data Sheets</p>
+            </a>
+            <a href="files/certifications.pdf" class="download-card" download>
+                <h3>Certifications</h3>
+                <p>ISO & Quality Standards</p>
+            </a>
+        </div>
+    </div>
+        </section>
+        <section class="apps-section">
+            <div class="container">
+                <h2 class="section-title">Industrial Applications</h2>
+                <div class="apps-grid">
+                    <div class="app-card"><img src="images/app-humanoid.jpg" alt="Humanoid"></div>
+                    <div class="app-card"><img src="images/app-cobot.jpg" alt="Cobot"></div>
+                    <div class="app-card"><img src="images/app-industrial.jpg" alt="Industrial"></div>
+                    <div class="app-card"><img src="images/app-medical.jpg" alt="Medical"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
