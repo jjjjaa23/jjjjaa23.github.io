@@ -1,1 +1,0 @@
-window.addEventListener('scroll',()=>{document.querySelector('.header').style.boxShadow=window.scrollY>30?'0 10px 30px #ddd':'none'});
