@@ -479,7 +479,7 @@
             
             // Simulate download
             const link = document.createElement('a');
-            link.href = '#';
+            link.href = 'downloads/' + filename;
             link.download = filename;
             document.body.appendChild(link);
             link.click();
