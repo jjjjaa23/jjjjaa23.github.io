@@ -330,27 +330,6 @@
         </div>
     </section>
 
-    <!-- TRUST BAR -->
-    <div class="bg-gray-900 text-white py-8">
-        <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center items-center gap-x-16 gap-y-8 text-center">
-            <div>
-                <div class="text-blue-400 text-4xl font-bold">≤ 20</div>
-                <div class="text-xs uppercase tracking-widest mt-1">arcsec Precision</div>
-            </div>
-            <div>
-                <div class="text-blue-400 text-4xl font-bold">300%</div>
-                <div class="text-xs uppercase tracking-widest mt-1">Torque Density</div>
-            </div>
-            <div>
-                <div class="text-blue-400 text-4xl font-bold">20,000+</div>
-                <div class="text-xs uppercase tracking-widest mt-1">Hours Lifespan</div>
-            </div>
-            <div>
-                <div class="text-blue-400 text-4xl font-bold">🇪🇺</div>
-                <div class="text-xs uppercase tracking-widest mt-1">Europe Focused</div>
-            </div>
-        </div>
-    </div>
 
     <!-- CONTACT -->
     <section id="contact" class="py-24 bg-white">
@@ -402,52 +381,75 @@
     <!-- FOOTER -->
     <footer class="bg-gray-900 text-white">
         <div class="max-w-7xl mx-auto px-6 pt-20 pb-12">
-            <div class="grid md:grid-cols-12 gap-12">
+             <div class="grid md:grid-cols-12 gap-12">
+
+                 <!-- Brand -->
                 <div class="md:col-span-5">
                     <div class="flex items-center gap-x-3 mb-8">
-                        <div class="w-9 h-9 bg-white rounded-xl flex items-center justify-center text-gray-900 font-bold text-3xl">X</div>
+                        <div class="w-9 h-9 bg-white rounded-xl flex items-center justify-center text-gray-900 font-bold text-3xl">
+                            X
+                        </div>
                         <span class="font-bold text-3xl">XIORVE</span>
                     </div>
-                    <p class="text-gray-400 max-w-md">Focused on Robotics. Built for Precision.</p>
-                    
+                    <p class="text-gray-400 max-w-md">
+                        Focused on Robotics. Built for Precision.
+                    </p>
                     <div class="mt-10 flex gap-x-6">
                         <i class="fab fa-linkedin text-2xl cursor-pointer hover:text-blue-400"></i>
                         <i class="fab fa-weixin text-2xl cursor-pointer hover:text-green-400"></i>
                     </div>
                 </div>
-                
+
+                 <!-- Company -->
                 <div class="md:col-span-2">
-                    <div class="uppercase text-xs tracking-widest text-gray-500 mb-6">Company</div>
-                    <div class="space-y-4 text-gray-300">
+                    <div class="uppercase text-xs tracking-widest text-gray-500 mb-6">
+                        Company
+                    </div>
+                      <div class="space-y-4 text-gray-300">
                         <div>About Us</div>
                         <div>Careers</div>
                     </div>
                 </div>
-                
+               
+                 <!-- Products -->
                 <div class="md:col-span-2">
-                    <div class="uppercase text-xs tracking-widest text-gray-500 mb-6">Products</div>
+                    <div class="uppercase text-xs tracking-widest text-gray-500 mb-6">
+                        Products
+                    </div>
                     <div class="space-y-4 text-gray-300">
                         <div>Harmonic Reducers</div>
                         <div>Joint Modules</div>
                     </div>
                 </div>
-                
+                 
+                <!-- Contact -->
                 <div class="md:col-span-3">
-                    <div class="uppercase text-xs tracking-widest text-gray-500 mb-6">Contact</div>
+                    <div class="uppercase text-xs tracking-widest text-gray-500 mb-6">
+                        Contact
+                    </div>
                     <div class="text-sm text-gray-400">
                         Germany / France / Italy<br>
                         Netherlands / Europe
                     </div>
-                    <div class="mt-8 text-xs text-gray-500">
-                        © 2026 XIORVE. All Rights Reserved.
-                    </div>
                 </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        // Tailwind script already loaded
+           </div>
+            
+               <!-- Bottom -->
+               <div class="border-t border-gray-800 mt-12 pt-6 
+                        flex flex-col md:flex-row 
+                        justify-between items-center 
+                        text-xs text-gray-500">
+                <div>
+                    © 2026 XIORVE. All Rights Reserved.
+                </div>
+               <div class="mt-3 md:mt-0">
+                    Focused on Robotics. Built for Precision.
+                </div>
+             </div>
+         </div>
+        </footer>
+        <script>
+            // Tailwind script already loaded
         
         function toggleMobileMenu() {
             const menu = document.getElementById('mobile-menu');
